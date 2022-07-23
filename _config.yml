@@ -27,10 +27,10 @@ url: "https://firedef.github.io" # the base hostname & protocol for your site, e
 github_username:  firedef
 
 # Build settings
-theme: jekyll-theme-so-simple
 plugins:
   - jekyll-feed
 
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/assets/css/skins/dark.css"
 # Exclude from processing.
 # The following items will not be processed, by default.
