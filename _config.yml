@@ -29,9 +29,9 @@ github_username:  firedef
 # Build settings
 plugins:
   - jekyll-feed
-
+  
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
-skin: "/assets/css/skins/dark.css"
+skin: "/sass/custom.css"
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

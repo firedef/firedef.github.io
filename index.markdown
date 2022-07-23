@@ -4,3 +4,11 @@
 
 layout: home
 ---
+
+{: .notice--accent}
+hello world!
+{: .notice--accent}
+
+{: .notice--danger}
+some error!
+{: .notice--danger}
