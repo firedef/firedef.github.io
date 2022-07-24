@@ -29,6 +29,15 @@ github_username:  firedef
 # Build settings
 plugins:
   - jekyll-feed
+
+markdown: kramdown
+mathjax:
+  enable: true
+  combo: "tex-svg"
+  tags: "ams"
+
+read_time: true
+words_per_minute: 200
   
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 skin: "/sass/custom.css"
