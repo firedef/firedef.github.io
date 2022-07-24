@@ -14,7 +14,6 @@ categories: web
 Run local: `bundle exec jekyll serve` <br/>
 Compile sass: `sass --watch sass/custom.scss sass/custom.css` <br/>
 Update gemfile: `bundle install` <br/>
-Source: [`https://github.com/firedef/firedef.github.io`][Source]
 {: .notice}
 
 {: .notice--success}
@@ -54,9 +53,6 @@ categories: ...
 </script>
 {% endhighlight %}
 For example, `$$x = {\frac{1}{n^{2}}}$$` will be rendered as $$x = {\frac{1}{n^{2}}}$$. All formula must be surrounded with `$$`. To prevent rendering, you can surround formula with `` ` ``.
-
-## Other
-This site is open source: [`https://github.com/firedef/firedef.github.io`][Source]
 
 [Jekyll]: https://jekyllrb.com/
 [SoSimple]: https://github.com/mmistakes/so-simple-theme
