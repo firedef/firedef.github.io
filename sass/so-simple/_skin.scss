@@ -187,7 +187,7 @@ td {
 
 /* Default notice */
 .notice {
-  @include notice(mix($base-color, $base-color, 40%));
+  @include notice($base00);
 }
 
 /* Accent notice */
@@ -271,7 +271,7 @@ td {
 
 code.highlighter-rouge {
   color: $base05;
-  background-color: $base00;
+  background-color: rgba($base02, 0.4);
 }
 
 div.highlighter-rouge,
