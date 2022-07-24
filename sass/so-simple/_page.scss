@@ -14,7 +14,7 @@
   margin-bottom: 0.5em;
   font-family: $title-font-family;
   font-weight: $page-title-weight;
-  font-style: italic;
+  font-style: bold;
   letter-spacing: -2px;
 }
 
@@ -72,7 +72,7 @@
   .page-date,
   .read-time {
     font-family: $meta-font-family;
-    font-style: italic;
+    font-style: bold;
     white-space: nowrap;
   }
 
