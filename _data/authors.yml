@@ -8,3 +8,6 @@ Firedef:
     - title: Github
       url: https://github.com/firedef
       icon: fab fa-github
+    - title: Gmail
+      url: mailto:firedef2019@gmail.com
+      icon: fas fa-envelope
