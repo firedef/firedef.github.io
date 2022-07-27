@@ -3,6 +3,7 @@ layout: post
 title:  "SomeCharts"
 description: "SomeCharts library"
 date:   2022-07-24 17:32:00 +0300
+permalink: /some-charts
 categories: data csharp opengl avalonia
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>

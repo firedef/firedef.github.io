@@ -3,6 +3,7 @@ layout: post
 title:  "How this site works"
 description: "This website is based on jekyll, so simple theme and hosted by Github..."
 date:   2022-07-24 15:05:00 +0300
+permalink: /posts/how-it-works
 categories: web
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
