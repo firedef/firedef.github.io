@@ -37,11 +37,8 @@ mathjax:
   tags: "ams"
 
 # Analytics
-analytics:
-  provider               : google-gtag
-  google:
-    tracking_id          : G-JRVBSZDX88
-    
+google_analytics: G-JRVBSZDX88
+
 read_time: true
 words_per_minute: 200
   
