@@ -915,24 +915,9 @@ figure.highlight {
   color: #f1a189;
 }
 
-.entry-image {
-  -webkit-box-ordinal-group: 0;
-  -ms-flex-order: -1;
-  order: -1;
-  width: 100%;
-  margin-bottom: -128px;
-}
-.entry-image:before, .entry-image:after {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 255, 255, 0.5);
-  transition: all 0.3s linear;
+.page-title,
+.entry-title {
+  font-style: normal;
 }
 
 /*# sourceMappingURL=custom.css.map */

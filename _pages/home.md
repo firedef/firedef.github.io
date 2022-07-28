@@ -8,11 +8,7 @@ permalink: /
 </script>
 
 # My posts:
----
+
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
-  {%- if site.plugins contains 'jekyll-paginate' and page.paginate or site.gems contains 'jekyll-paginate' and page.paginate -%}
-    {% include posts-paginated.html %}
-  {%- else -%}
-    {% include posts-limit.html %}
-  {%- endif -%}
+    {% include posts.html %}
 </div>
