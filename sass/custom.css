@@ -925,4 +925,8 @@ ol {
   margin-bottom: 4px;
 }
 
+.site-nav {
+  animation-duration: 0.3s;
+}
+
 /*# sourceMappingURL=custom.css.map */
