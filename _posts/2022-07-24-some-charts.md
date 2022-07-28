@@ -5,6 +5,8 @@ description: "SomeCharts library"
 date:   2022-07-24 17:32:00 +0300
 permalink: /some-charts
 categories: data csharp opengl avalonia
+image:
+  thumbnail: /images/Thumbnails/SomeChartsThumb.png
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script type="text/javascript" id="MathJax-script" async
