@@ -22,14 +22,12 @@ This website is open source. Code is available on <br/>
 The library is not in the release state. Some functionality can be changed, some hardcoded and some bugs may appear.
 {: .notice--warning}
 
-{% include toc %}
 
-
-## Description
+# Description
 SomeCharts is a fast cross-platform C# library for data visualisation. Current backend uses Avalonia and OpenGl, but can been ported to any environment.
 
 
-## Problem
+# Problem
 There are some alternative libraries:
 - [ScottPlot][ScottPlot]
 - [OxyPlot][OxyPlot]
@@ -40,7 +38,7 @@ But all of them have different downsides. For example, they are extremely slow. 
 SomeCharts is using (almost) raw OpenGl. All charts are constructing to meshes which can be rendering very efficiently. Levels of detalisation and 2D frustum culling removes non-visible elements. Lot's of code is *unsafe* (pointers, stack allocations, etc.) which reduces garbage.
 
 
-## Text rendering
+# Text rendering
 SomeCharts uses custom text rendering. Library **FreeType** uses for texture generation from font chars. Generated textures are packed into texture atlases to reduce state changes (improve performance).
 
 normal text | text mesh
@@ -63,31 +61,36 @@ There are LCD (subpixel) attempt. LCD samples text on subpixels of screen. LCD r
 Full text shader can be found here: [fragment][TextShaderFrag] and [vertex][TextShaderVert]
 
 
-## Charts
-### [Line chart:][LineChart]
+# Charts
+## Line chart
+[file][LineChart]
 
 Simple line chart | 10K different lines at runtime (~5 fps)
 ![image-left]({{ '/images/../../../images/SomeCharts/lineChart.png' | absolute_url }}){: .align-left} | ![image-right]({{ '/images/../../../images/SomeCharts/10000LinesAtRuntime.png' | absolute_url }}){: .align-right}
 
-### [Pie chart:][PieChart]
+## Pie chart
+[file][PieChart]
 
 Dark theme | Light theme
 ![image-left]({{ '/images/../../../images/SomeCharts/pieChart.png' | absolute_url }}){: .align-left} | ![image-right]({{ '/images/../../../images/SomeCharts/pieChartLight.png' | absolute_url }}){: .align-right}
 
-### [Scatter chart:][ScatterChart]
+## Scatter chart
+[file][ScatterChart]
 
 ![image-left]({{ '/images/../../../images/SomeCharts/scatterChart.png' | absolute_url }}){: .align-left} | Render items with different shapes, sizes, colors and positions
 
-### [Heatmap:][HeatMap]
+## Heatmap
+[file][HeatMap]
 
 ![image-left]({{ '/images/../../../images/SomeCharts/heatmap.png' | absolute_url }}){: .align-left} | Renders cells at different meshes to handle lot's of vertices and support multithreading.
 
-### [Mesh:][MeshRenderer]
+## Mesh
+[file][MeshRenderer]
 
 ![image-left]({{ '/images/../../../images/SomeCharts/monkey.png' | absolute_url }}){: .align-left} | SomeCharts can render mesh from `.obj` files
 
 
-## Data
+# Data
 SomeCharts uses [interfaces][DataInterfaces] to handle different data types. By default, data can be applied as functions, arrays, ienumerable and constants.
 {% highlight csharp %}
 const int lineLength = 81920;
@@ -97,7 +100,7 @@ LineChart chart = canvas.AddLineChart(data, colors);
 {% endhighlight %}
 
 
-## Examples
+# Examples
 Examples can be found [there][Examples]
 
 [Source]: https://github.com/firedef/SomeCharts

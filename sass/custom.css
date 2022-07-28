@@ -920,4 +920,9 @@ figure.highlight {
   font-style: normal;
 }
 
+ul,
+ol {
+  margin-bottom: 4px;
+}
+
 /*# sourceMappingURL=custom.css.map */

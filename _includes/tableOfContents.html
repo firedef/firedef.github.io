@@ -1,0 +1,26 @@
+{% assign parts = page | strip | split: '<h' %}
+
+<div style="text-align: start;">
+    <h5 style="margin-bottom: 0px; text-align: center;">Table of contents:</h5>
+    {% for part in parts offset:1 %}
+        {% assign nodes = part | split: '</h' %}
+        {% assign level = nodes[0] | slice 3,0 | times: 1 %}
+        {% assign nodeAnchor = nodes[0] | split: 'id="' | last | split: '"' | first %}
+
+        {% assign nodeContents = nodes[0] | split: '>' %}
+        {% assign nodeSize = nodeContents | size %}
+        {% assign nodeContent = nodeContents[1] %}
+
+        {% if nodeContent contains ">" or nodeContent contains "<" %}
+            {% continue %}
+        {% endif %}
+
+        {% for i in (1..level) %}
+    <ul>
+        {% endfor %}
+    <li><a href="#{{nodeAnchor}}">{{nodeContent}}</a></li>
+        {% for i in (1..level) %}
+    </ul>
+        {% endfor %}
+    {% endfor %}
+</div>
