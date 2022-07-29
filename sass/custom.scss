@@ -74,3 +74,95 @@ ol {
 .site-nav {
     animation-duration: 0.3s;
 }
+
+.noHover{
+    pointer-events: none;
+}
+
+.link-button {
+    background-color: #383a52;
+    font-weight: 900;
+    padding: 4px 8px 4px 8px;
+    margin: 4px 4px 4px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    opacity: 80%;
+    min-width: 64px;
+    display: inline-block;
+    text-align: center;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.gmail { color: #ff99d1; &:hover { color: #ff99d1; } }
+.github { color: #a9f; &:hover { color: #a9f; } }
+.linkedIn { color: #99bdff; &:hover { color: #99bdff; } }
+.telegram { color: #99fffa; &:hover { color: #99fffa; } }
+.location { color: #aaff99; &:hover { color: #aaff99; } }
+
+.tech-button {
+    background-color: #383a52;
+    font-weight: 900;
+    padding: 4px 8px 4px 8px;
+    margin: 4px 4px 4px 0px;
+    border-radius: 8px;
+    text-decoration: none;
+    opacity: 80%;
+    min-width: 64px;
+    display: inline-block;
+    text-align: center;
+    transition: width 1s ease-in-out;
+
+    &:hover {
+        opacity: 100%;
+    }
+}
+
+.known1 { color: #ff99d1; &:hover { color: #ff99d1; } }
+.known2 { color: #a9f; &:hover { color: #a9f; } }
+.known3 { color: #99bdff; &:hover { color: #99bdff; } }
+.known4 { color: #99fffa; &:hover { color: #99fffa; } }
+.known5 { color: #aaff99; &:hover { color: #aaff99; } }
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #383a52;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 8px;
+    opacity: 0;
+
+    position: absolute;
+    z-index: 1;
+    top: 110%;
+    left: 50%;
+    margin-left: -60px;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+h1 {
+    margin-top: 32px;
+    margin-bottom: 4px;
+}
+h2 {
+    margin-top: 24px;
+    margin-bottom: 2px;
+}
+h3 {
+    margin-top: 16px;
+    margin-bottom: 0px;
+}

@@ -3,8 +3,16 @@ layout: simple
 title:  "About"
 description: "About me"
 permalink: /about
+disableTitleInPost: true
 ---
 
+<h1>About me</h1>
+{% include AboutMe.html %}
+
+<h1>My technical skills</h1>
+{% include myTech.html %}
+
+<h1>A</h1>
 I’m a self-taught programmer with 4 years of non-commercial experience, with a huge passion for low-level code, optimizations, science, trading and graphics.
 
 I’m very curious - always open to learning something new. Like to solve complex tasks. Able to write compact and performant code in different languages and design app architecture.
