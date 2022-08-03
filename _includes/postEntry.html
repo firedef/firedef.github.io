@@ -5,7 +5,8 @@
 {% endif %}
 
 <article class="entry h-entry">
-    <header class="entry-header">
+    <header class="entry-header" class="cardPostEntry">
+      <a href="{{ entry.url | relative_url }}" rel="bookmark" style="display: contents; top:0px; left:0px; right:0px; bottom:0px;">
         <div width="100%">
             {% if entry.image.thumbnail %}
                 {% assign entry_image = entry.image.thumbnail %}
@@ -13,36 +14,31 @@
                     {% assign entry_image = entry_image | relative_url %}
                 {% endunless %}
                 {% assign entry_image = entry_image | escape %}
-                <div style="height:128px; display:inline-block; width: 256px;">
-                    <img src="{{ entry_image }}" alt="" style="height:128px; width: 256px; display:inline-block;">
-                    <div style="background: linear-gradient(90deg, #2528316c, #25283100, #252831f8); position: absolute; top: 0px; left: 0px; width: 256px; height: 128px;"></div>
+                <div class="entry-card">
+                    <img class="entry-card-img" src="{{ entry_image }}" alt="">
                 </div>
             {% endif %}
 
-            <div style="display:inline-block; vertical-align: bottom;">
+            <div class="post-entry-card">
+                {% if site.read_time or entry.date and page.layout != 'collection' %}
+                  <div class="post-entry-meta">
+                    {% if site.read_time %}{% include read-time.html %}{% endif %} 
+                    <div class="post-entry-space"></div>
+                    {% if entry.date %}{% include entry-date.html %}{% endif %}
+                  </div>
+                {% endif %}
+
                 <h3 class="entry-title p-name">
-                    {% if entry.link %}
-                      <a class="u-bookmark-of" href="{{ entry.link }}">{{ title }}</a> <a href="{{ entry.url | relative_url }}" rel="bookmark"><span class="link-arrow">&rarr;</span></a>
-                    {% else %}
-                      <a href="{{ entry.url | relative_url }}" rel="bookmark">{{ title }}</a>
-                    {% endif %}
+                  {{ title }}
                 </h3>
 
-                {% if site.read_time or entry.date and page.layout != 'collection' %}
-                    <footer class="entry-meta">
-                    {% if site.read_time %}{% include read-time.html %}{% endif %}
-                    {% if entry.date %}{% include entry-date.html %}{% endif %}
-                    </footer>
+                {% if entry.description %}
+                  <div class="entry-description">
+                    {{ entry.description }}
+                  </div>
                 {% endif %}
             </div>
         </div>
-      </header>
-
-      {% unless page.show_excerpts == false %}
-        <div class="entry-excerpt p-summary">
-          {% if entry.excerpt %}
-            {{ entry.excerpt | markdownify }}
-          {% endif %}
-        </div>
-      {% endunless %}
+      </a>
+    </header>
 </article>

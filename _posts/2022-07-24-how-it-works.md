@@ -1,17 +1,14 @@
 ---
 layout: post
 title:  "How this site works"
-description: "This website is based on jekyll, so simple theme and hosted by Github..."
+description: "Short article about hosting, technologies and features of this site"
 date:   2022-07-24 15:05:00 +0300
 permalink: /posts/how-it-works
 categories: web
 image:
   thumbnail: /images/Thumbnails/HowItWorksThumb.png
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
+{% include math %}
 
 {: .notice}
 Run local: `bundle exec jekyll serve` <br/>

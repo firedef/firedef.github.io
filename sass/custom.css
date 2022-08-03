@@ -1078,4 +1078,138 @@ h3 {
   margin-bottom: 0px;
 }
 
+img {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3294117647);
+  border-radius: 16px;
+}
+
+.entry-card-img {
+  box-shadow: none;
+  border-radius: 0px;
+  height: 128px;
+  width: 256px;
+  display: inline-block;
+}
+@media all and (max-width: 800px) {
+  .entry-card-img {
+    opacity: 15%;
+  }
+}
+
+.entry-card {
+  height: 128px;
+  display: inline-block;
+  width: 256px;
+}
+@media all and (max-width: 800px) {
+  .entry-card {
+    position: absolute;
+  }
+}
+
+.cardPostEntry {
+  background-color: #272a33;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3490196078);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry:hover {
+  background-color: #363944;
+  box-shadow: 0px 0px 24px 0px #2a2d37;
+}
+
+.post-entry-meta {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 14px;
+  opacity: 50%;
+  font-weight: bold;
+  text-align: right;
+}
+@media all and (max-width: 800px) {
+  .post-entry-meta {
+    position: relative;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    margin-left: 8px;
+  }
+}
+
+.post-entry-space {
+  content: "";
+  display: block;
+}
+@media all and (max-width: 800px) {
+  .post-entry-space {
+    display: inline-block;
+    margin-left: 4px;
+  }
+}
+
+.entry-title {
+  font-style: normal;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.entry-description {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 50%;
+}
+
+.post-entry-card {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.notice--danger {
+  background-color: rgba(255, 162, 158, 0.1);
+  color: rgb(255, 162, 158);
+}
+.notice--danger a {
+  color: rgba(255, 162, 158, 0.8);
+}
+.notice--danger a:hover {
+  color: rgb(255, 162, 158);
+}
+
+.notice--warning {
+  background-color: rgba(255, 243, 184, 0.1);
+  color: rgb(255, 243, 184);
+}
+.notice--warning a {
+  color: rgba(255, 243, 184, 0.8);
+}
+.notice--warning a:hover {
+  color: rgb(255, 243, 184);
+}
+
+.notice--success {
+  background-color: rgba(164, 255, 187, 0.1);
+  color: rgb(164, 255, 187);
+}
+.notice--success a {
+  color: rgba(164, 255, 187, 0.8);
+}
+.notice--success a:hover {
+  color: rgb(164, 255, 187);
+}
+
+.notice--info {
+  background-color: rgba(179, 233, 255, 0.1);
+  color: rgb(179, 233, 255);
+}
+.notice--info a {
+  color: rgba(179, 233, 255, 0.8);
+}
+.notice--info a:hover {
+  color: rgb(179, 233, 255);
+}
+
 /*# sourceMappingURL=custom.css.map */

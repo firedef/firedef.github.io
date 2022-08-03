@@ -4,6 +4,8 @@
 @import "so-simple/variables";
 @import "so-simple/notices";
 
+$serif-font-family: "Comfortaa", serif;
+
 /* Colors */
 $base-color: #eaeaea !default;
 $text-color: #bfc5ca !default;
@@ -165,4 +167,120 @@ h2 {
 h3 {
     margin-top: 16px;
     margin-bottom: 0px;
+}
+
+img {
+    box-shadow: 0px 0px 20px 0px #00000054;
+    border-radius: 16px;
+}
+
+.entry-card-img {
+    box-shadow: none;
+    border-radius: 0px;
+    height:128px; 
+    width: 256px; 
+    display:inline-block;
+
+    @media all and (max-width: 800px) {
+        opacity: 15%;
+    }
+}
+
+.entry-card {
+    height:128px; 
+    display:inline-block; 
+    width: 256px;
+
+    @media all and (max-width: 800px) {
+        position: absolute;
+    }
+}
+
+.cardPostEntry {
+    background-color: mix($background-color, $base00, 90%);
+    box-shadow: 0px 0px 24px 0px #00000059;
+    border-radius: 16px;
+    padding: 4px;
+    padding-left: 16px;
+    transition: all 0.3s;
+
+    &:hover {
+        background-color: $base00;
+        box-shadow: 0px 0px 24px 0px mix($background-color, $base00, 70%);
+    }
+}
+
+.post-entry-meta {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 14px;
+    opacity: 50%;
+    font-weight: bold;
+    text-align: right;
+
+    @media all and (max-width: 800px) {
+        position: relative;
+        display: block;
+        text-align: left;
+        font-size: 12px;
+        margin-left: 8px;
+    }
+}
+
+.post-entry-space {
+    content: "";
+    display: block;
+
+    @media all and (max-width: 800px) {
+        display: inline-block;
+        margin-left: 4px;
+    }
+}
+
+.entry-title {
+    font-style: normal;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+.entry-description {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    opacity: 50%;
+}
+
+.post-entry-card {
+    display:inline-block; 
+    vertical-align: top;
+}
+
+@mixin notice($name) {
+    background-color: rgba($name, 0.1);
+    color: $name;
+
+    a {
+        color: rgba($name, 0.8);
+    
+        &:hover {
+            color: $name;
+        }
+    }
+}
+
+.notice--danger {
+    @include notice($danger-color);
+}
+
+.notice--warning {
+    @include notice($warning-color);
+}
+
+.notice--success {
+    @include notice($success-color);
+}
+
+.notice--info {
+    @include notice($info-color);
 }

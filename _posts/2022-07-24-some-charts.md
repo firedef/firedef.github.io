@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "SomeCharts"
-description: "SomeCharts library"
+description: "SomeCharts is a C# library for data visualisation writen on Avalonia and OpenGl"
 date:   2022-07-24 17:32:00 +0300
 permalink: /some-charts
 categories: data csharp opengl avalonia
