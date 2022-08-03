@@ -5,6 +5,8 @@ description: "Time function for elliptical orbits"
 date:   2022-08-01 14:50:00 +0300
 categories: csharp unity astrus astronomy
 permalink: /posts/elliptical-orbits
+image:
+  thumbnail: /images/Thumbnails/EllipticalOrbitsThumb.png
 ---
 {% include math %}
 
