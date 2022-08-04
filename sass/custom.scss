@@ -284,3 +284,15 @@ img {
 .notice--info {
     @include notice($info-color);
 }
+
+.entries-list-in-page .entry-title {
+    font-size: 22px !important;
+}
+
+figure {
+    border-radius: 16px;
+}
+
+video {
+    border-radius: 16px;
+}

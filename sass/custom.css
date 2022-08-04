@@ -1212,4 +1212,16 @@ img {
   color: rgb(179, 233, 255);
 }
 
+.entries-list-in-page .entry-title {
+  font-size: 22px !important;
+}
+
+figure {
+  border-radius: 16px;
+}
+
+video {
+  border-radius: 16px;
+}
+
 /*# sourceMappingURL=custom.css.map */

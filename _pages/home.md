@@ -7,6 +7,6 @@ permalink: /
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-<div class="entries-{{ page.entries_layout | default: 'list' }}">
+<div class="entries-list">
     {% include posts.html %}
 </div>

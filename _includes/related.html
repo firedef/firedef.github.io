@@ -1,0 +1,9 @@
+{% if page.related %}
+    <div class="entries-list entries-list-in-page">
+        <h1>Related:</h1>
+        {%- for e in page.related -%}
+            {% assign entry = site.posts | where:"url", e | first %}
+            {% include postEntry.html %}
+        {%- endfor -%}
+    </div>
+{% endif %}

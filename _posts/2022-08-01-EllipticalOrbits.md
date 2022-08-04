@@ -7,6 +7,8 @@ categories: csharp unity astrus astronomy
 permalink: /posts/elliptical-orbits
 image:
   thumbnail: /images/Thumbnails/EllipticalOrbitsThumb.png
+related: 
+  - /astrus
 ---
 {% include math %}
 
