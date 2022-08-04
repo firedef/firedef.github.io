@@ -21,6 +21,28 @@ layout: default
         {% endunless %}
       </header>
       <div class="page-content">
+        {% if page.pageWip %}
+          <p class="notice--danger">
+            <i class="fa-solid fa-person-digging"></i>
+            This page is work in progress 
+          </p>
+        {% endif %}
+
+        {% if page.projectWip %}
+          <p class="notice--warning">
+            <i class="fa-solid fa-person-digging"></i>
+            This project is work in progress 
+          </p>
+        {% endif %}
+
+        {% if page.source %}
+          <p class="notice--success">
+            <i class="fa-solid fa-code-branch"></i>
+            This project is open source:
+            <a href="{{page.source}}">{{page.source}}</a>            
+          </p>
+        {% endif %}
+
         {{ content }}
 
         {% if page.share %}

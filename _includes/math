@@ -4,5 +4,5 @@
 </script>
 
 {: .notice--info}
-This page contains math formulas. If it doesn't load, reload the page
+<i class="fa-solid fa-square-root-variable notice-icon"></i> This page contains math formulas. If it doesn't load, reload the page
 {: .notice--info}

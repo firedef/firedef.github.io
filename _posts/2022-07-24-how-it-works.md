@@ -7,6 +7,7 @@ permalink: /posts/how-it-works
 categories: web
 image:
   thumbnail: /images/Thumbnails/HowItWorksThumb.png
+source: https://github.com/firedef/firedef.github.io
 ---
 {% include math %}
 
@@ -15,11 +16,6 @@ Run local: `bundle exec jekyll serve` <br/>
 Compile sass: `sass --watch sass/custom.scss sass/custom.css` <br/>
 Update gemfile: `bundle install` <br/>
 {: .notice}
-
-{: .notice--success}
-This website is open source. Code is available on <br/>
-[https://github.com/firedef/firedef.github.io][Source]
-{: .notice--success}
 
 # Dependencies
 This website is based on [jekyll][Jekyll], [so simple theme][SoSimple] and hosted by Github. Jekyll is a website generator using **markdown** files.

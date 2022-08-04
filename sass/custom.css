@@ -1224,4 +1224,11 @@ video {
   border-radius: 16px;
 }
 
+.notice-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+
 /*# sourceMappingURL=custom.css.map */

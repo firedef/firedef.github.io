@@ -1,8 +1,6 @@
 - title: Home
   url: /
 - title: Projects
-  url: /
+  url: /projects
 - title: About
   url: /about
-- title: Search
-  url: /search

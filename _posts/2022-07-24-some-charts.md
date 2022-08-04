@@ -5,18 +5,11 @@ description: "SomeCharts is a C# library for data visualisation writen on Avalon
 date:   2022-07-24 17:32:00 +0300
 permalink: /some-charts
 categories: data csharp opengl avalonia
+source: https://github.com/firedef/SomeCharts
 image:
   thumbnail: /images/Thumbnails/SomeChartsThumb.png
 ---
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
-</script>
-
-{: .notice--success}
-This website is open source. Code is available on <br/>
-[https://github.com/firedef/SomeCharts][Source]
-{: .notice--success}
+{% include math %}
 
 {: .notice--warning}
 The library is not in the release state. Some functionality can be changed, some hardcoded and some bugs may appear.
