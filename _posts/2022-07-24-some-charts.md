@@ -8,6 +8,7 @@ categories: data csharp opengl avalonia
 source: https://github.com/firedef/SomeCharts
 image:
   thumbnail: /images/Thumbnails/SomeChartsThumb.png
+color: purple
 ---
 {% include math %}
 
@@ -34,8 +35,8 @@ SomeCharts is using (almost) raw OpenGl. All charts are constructing to meshes w
 # Text rendering
 SomeCharts uses custom text rendering. Library **FreeType** uses for texture generation from font chars. Generated textures are packed into texture atlases to reduce state changes (improve performance).
 
-normal text | text mesh
-![image-left]({{ '/images/../../../images/SomeCharts/text.png' | absolute_url }}){: .align-left} | ![image-right]({{ '/images/../../../images/SomeCharts/textMesh.png' | absolute_url }}){: .align-right}
+<img class="img-left" src="/images/../../../images/SomeCharts/text.png">
+<img class="img-right" src="/images/../../../images/SomeCharts/textMesh.png">
 
 ![image-left]({{ '/images/../../../images/SomeCharts/textSmall.png' | absolute_url }}){: .align-left} | 2.7mb Utf-8 text file (**2.7 million characters!**). The most of text are not fitting to screen. Rendering at almost 60 fps and mesh building in ~5 sec. No downscales or levels of detalisations are using in text rendering
 

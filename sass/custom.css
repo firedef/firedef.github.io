@@ -1078,6 +1078,8 @@ h3 {
   margin-bottom: 0px;
 }
 
+figure,
+video,
 img {
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3294117647);
   border-radius: 16px;
@@ -1108,16 +1110,130 @@ img {
 }
 
 .cardPostEntry {
-  background-color: #272a33;
-  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.3490196078);
+  background-color: #2e333c;
+  box-shadow: 0px 0px 32px 0px rgba(4, 5, 5, 0.472);
   border-radius: 16px;
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
 }
 .cardPostEntry:hover {
-  background-color: #363944;
-  box-shadow: 0px 0px 24px 0px #2a2d37;
+  background-color: #4f5661;
+  box-shadow: 0px 0px 40px 0px #262c2f;
+}
+.cardPostEntry a {
+  color: #d1e0e6;
+}
+.cardPostEntry a:hover {
+  color: #f0f5f7;
+}
+.cardPostEntry.blue {
+  background-color: #2d323e;
+  box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.blue:hover {
+  background-color: #4a5369;
+  box-shadow: 0px 0px 40px 0px #222936;
+}
+.cardPostEntry.blue a {
+  color: #c2d7ff;
+}
+.cardPostEntry.blue a:hover {
+  color: #ebf2ff;
+}
+.cardPostEntry.purple {
+  background-color: #2e303e;
+  box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.purple:hover {
+  background-color: #4e4c69;
+  box-shadow: 0px 0px 40px 0px #262336;
+}
+.cardPostEntry.purple a {
+  color: #cfc2ff;
+}
+.cardPostEntry.purple a:hover {
+  color: #efebff;
+}
+.cardPostEntry.red {
+  background-color: #333039;
+  box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.red:hover {
+  background-color: #5e4c58;
+  box-shadow: 0px 0px 40px 0px #352326;
+}
+.cardPostEntry.red a {
+  color: #ffc2ca;
+}
+.cardPostEntry.red a:hover {
+  color: #ffebed;
+}
+.cardPostEntry.orange {
+  background-color: #333138;
+  box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.orange:hover {
+  background-color: #5e5155;
+  box-shadow: 0px 0px 40px 0px #352724;
+}
+.cardPostEntry.orange a {
+  color: #ffd0c2;
+}
+.cardPostEntry.orange a:hover {
+  color: #ffefeb;
+}
+.cardPostEntry.yellow {
+  background-color: #333438;
+  box-shadow: 0px 0px 32px 0px rgba(6, 5, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.yellow:hover {
+  background-color: #5e5a55;
+  box-shadow: 0px 0px 40px 0px #352f24;
+}
+.cardPostEntry.yellow a {
+  color: #ffecc2;
+}
+.cardPostEntry.yellow a:hover {
+  color: #fff9eb;
+}
+.cardPostEntry.green {
+  background-color: #2e3638;
+  box-shadow: 0px 0px 32px 0px rgba(4, 6, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.cardPostEntry.green:hover {
+  background-color: #4f6155;
+  box-shadow: 0px 0px 40px 0px #263524;
+}
+.cardPostEntry.green a {
+  color: #d0ffc2;
+}
+.cardPostEntry.green a:hover {
+  color: #efffeb;
 }
 
 .post-entry-meta {
@@ -1216,19 +1332,71 @@ img {
   font-size: 22px !important;
 }
 
-figure {
-  border-radius: 16px;
-}
-
-video {
-  border-radius: 16px;
-}
-
 .notice-icon {
   width: 32px;
   height: 32px;
   vertical-align: middle;
   margin-right: 16px;
+}
+
+table {
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3294117647);
+  border-radius: 16px;
+  display: block;
+  overflow: scroll;
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #494e5e;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #707892;
+}
+
+.img-left {
+  float: left;
+  width: 46%;
+  margin: 2%;
+}
+.img-left:after {
+  content: attr(title);
+  position: absolute;
+  display: block;
+  background: #ccc;
+  color: black;
+  padding: 5px;
+}
+
+.img-right {
+  float: right;
+  width: 46%;
+  margin: 2%;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #363944;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 /*# sourceMappingURL=custom.css.map */

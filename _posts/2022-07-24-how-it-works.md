@@ -8,6 +8,7 @@ categories: web
 image:
   thumbnail: /images/Thumbnails/HowItWorksThumb.png
 source: https://github.com/firedef/firedef.github.io
+color: red
 ---
 {% include math %}
 
