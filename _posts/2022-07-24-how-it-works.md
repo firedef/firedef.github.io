@@ -5,10 +5,15 @@ description: "Short article about hosting, technologies and features of this sit
 date:   2022-07-24 15:05:00 +0300
 permalink: /posts/how-it-works
 categories: web
-image:
-  thumbnail: /images/Thumbnails/HowItWorksThumb.png
 source: https://github.com/firedef/firedef.github.io
 color: red
+background:
+    - src: /images/Backgrounds/HowItWorks/0.png
+      parallax: 8
+    - src: /images/Backgrounds/HowItWorks/1.png
+      parallax: 16
+    - src: /images/Backgrounds/HowItWorks/2.png
+      parallax: 32
 ---
 {% include math %}
 

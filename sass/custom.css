@@ -1109,8 +1109,21 @@ img {
   }
 }
 
+.card-bg {
+  background-size: cover;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  border-radius: 16px;
+  z-index: -1;
+  background-position-y: 0px;
+  transition: all 0.3s;
+}
+
 .cardPostEntry {
-  background-color: #2e333c;
+  background-color: rgba(46, 51, 60, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(4, 5, 5, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1118,7 +1131,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry:hover {
-  background-color: #4f5661;
+  background-color: rgba(79, 86, 97, 0.5);
   box-shadow: 0px 0px 40px 0px #262c2f;
 }
 .cardPostEntry a {
@@ -1128,7 +1141,7 @@ img {
   color: #f0f5f7;
 }
 .cardPostEntry.blue {
-  background-color: #2d323e;
+  background-color: rgba(45, 50, 62, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1136,7 +1149,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.blue:hover {
-  background-color: #4a5369;
+  background-color: rgba(74, 83, 105, 0.5);
   box-shadow: 0px 0px 40px 0px #222936;
 }
 .cardPostEntry.blue a {
@@ -1146,7 +1159,7 @@ img {
   color: #ebf2ff;
 }
 .cardPostEntry.purple {
-  background-color: #2e303e;
+  background-color: rgba(46, 48, 62, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1154,7 +1167,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.purple:hover {
-  background-color: #4e4c69;
+  background-color: rgba(78, 76, 105, 0.5);
   box-shadow: 0px 0px 40px 0px #262336;
 }
 .cardPostEntry.purple a {
@@ -1164,7 +1177,7 @@ img {
   color: #efebff;
 }
 .cardPostEntry.red {
-  background-color: #333039;
+  background-color: rgba(51, 48, 57, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1172,7 +1185,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.red:hover {
-  background-color: #5e4c58;
+  background-color: rgba(94, 76, 88, 0.5);
   box-shadow: 0px 0px 40px 0px #352326;
 }
 .cardPostEntry.red a {
@@ -1182,7 +1195,7 @@ img {
   color: #ffebed;
 }
 .cardPostEntry.orange {
-  background-color: #333138;
+  background-color: rgba(51, 49, 56, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1190,7 +1203,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.orange:hover {
-  background-color: #5e5155;
+  background-color: rgba(94, 81, 85, 0.5);
   box-shadow: 0px 0px 40px 0px #352724;
 }
 .cardPostEntry.orange a {
@@ -1200,7 +1213,7 @@ img {
   color: #ffefeb;
 }
 .cardPostEntry.yellow {
-  background-color: #333438;
+  background-color: rgba(51, 52, 56, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(6, 5, 4, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1208,7 +1221,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.yellow:hover {
-  background-color: #5e5a55;
+  background-color: rgba(94, 90, 85, 0.5);
   box-shadow: 0px 0px 40px 0px #352f24;
 }
 .cardPostEntry.yellow a {
@@ -1218,7 +1231,7 @@ img {
   color: #fff9eb;
 }
 .cardPostEntry.green {
-  background-color: #2e3638;
+  background-color: rgba(46, 54, 56, 0.5);
   box-shadow: 0px 0px 32px 0px rgba(4, 6, 4, 0.472);
   border-radius: 16px;
   padding: 4px;
@@ -1226,7 +1239,7 @@ img {
   transition: all 0.3s;
 }
 .cardPostEntry.green:hover {
-  background-color: #4f6155;
+  background-color: rgba(79, 97, 85, 0.5);
   box-shadow: 0px 0px 40px 0px #263524;
 }
 .cardPostEntry.green a {
@@ -1270,6 +1283,7 @@ img {
   font-style: normal;
   font-weight: bold;
   vertical-align: top;
+  font-family: Montserrat;
 }
 
 .entry-description {
@@ -1277,6 +1291,7 @@ img {
   font-weight: bold;
   font-size: 16px;
   opacity: 50%;
+  font-family: Montserrat;
 }
 
 .post-entry-card {
@@ -1397,6 +1412,32 @@ table {
   color: white;
   padding-left: 20px;
   padding-right: 20px;
+}
+
+.reveal {
+  opacity: 0%;
+  transition: 0.5s all;
+  position: relative;
+  transform: translateY(100px);
+}
+.reveal.active {
+  opacity: 1000%;
+  transform: translateY(0px);
+}
+
+@keyframes flickeringAnim {
+  from {
+    filter: brightness(0.7);
+  }
+  to {
+    filter: brightness(1);
+  }
+}
+.flickering {
+  animation-name: flickeringAnim;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 /*# sourceMappingURL=custom.css.map */

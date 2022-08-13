@@ -178,7 +178,7 @@ img {
 
 @mixin cardPostEntryMixin($color) {
     $col: mix($base00, $color, 40%);
-    background-color: mix($background-color, $col, 90%);
+    background-color: rgba(mix($background-color, $col, 90%), 50%);
     box-shadow: 0px 0px 32px 0px mix(#0007, $col, 99%);
     border-radius: 16px;
     padding: 4px;
@@ -186,7 +186,7 @@ img {
     transition: all 0.3s;
 
     &:hover {
-        background-color: mix($base00, $color, 80%);
+        background-color: rgba(mix($base00, $color, 80%), 50%);
         box-shadow: 0px 0px 40px 0px mix(#000f, $col, 70%);
     }
 
@@ -196,6 +196,19 @@ img {
             color: mix(white, $color, 80%);
         }
     }
+}
+
+.card-bg {
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border-radius: 16px;
+    z-index: -1;
+    background-position-y: 0px;
+    transition: all 0.3s;
 }
 
 .cardPostEntry {
@@ -241,6 +254,7 @@ img {
     font-style: normal;
     font-weight: bold;
     vertical-align: top;
+    font-family: Montserrat;
 }
 
 .entry-description {
@@ -248,6 +262,7 @@ img {
     font-weight: bold;
     font-size: 16px;
     opacity: 50%;
+    font-family: Montserrat;
 }
 
 .post-entry-card {
@@ -352,4 +367,28 @@ table {
     color: white;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.reveal {
+    opacity: 0%;
+    transition: 0.5s all;
+    position: relative;
+    transform: translateY(100px);
+
+    &.active {
+        opacity: 1000%;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes flickeringAnim {
+    from {filter: brightness(0.7);}
+    to {filter: brightness(1);}
+}
+
+.flickering {
+    animation-name: flickeringAnim;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
