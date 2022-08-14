@@ -4,8 +4,8 @@
   {% assign title = entry.title %}
 {% endif %}
 
-<article class="entry h-entry reveal">
-    <header class="cardPostEntry entry-header {{ entry.color }} bg-before-scroll">
+<article class="entry h-entry reveal {{ entry.extra.class.entry }}">
+    <header class="cardPostEntry entry-header {{ entry.color }} bg-before-scroll {{ entry.extra.class.card }}" style="{{ entry.extra.style.card }}">
       <a href="{{ entry.url | relative_url }}" rel="bookmark" style="display: contents; top:0px; left:0px; right:0px; bottom:0px;">
         <div width="100%">
             {% if entry.image.thumbnail %}
@@ -15,7 +15,7 @@
                 {% endunless %}
                 {% assign entry_image = entry_image | escape %}
                 <div class="entry-card">
-                    <img class="entry-card-img {{ entry.classes.thumbnail }}" style="{{ entry.styles.thumbnail }}" src="{{ entry_image }}" alt="">
+                    <img class="entry-card-img {{ entry.extra.class.thumbnail }}" style="{{ entry.extra.style.thumbnail }}" src="{{ entry_image }}" alt="">
                 </div>
             {% endif %}
 

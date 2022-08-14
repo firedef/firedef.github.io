@@ -167,9 +167,9 @@ img {
 }
 
 .entry-card {
-    height:128px; 
-    display:inline-block; 
+    height:128px;
     width: 256px;
+    float: left;
 
     @media all and (max-width: 800px) {
         position: absolute;
@@ -194,6 +194,26 @@ img {
         color: mix(white, $color, 40%);
         &:hover {
             color: mix(white, $color, 80%);
+        }
+    }
+}
+
+.entry {
+    &.left {
+        float: left;
+        width: 45%;
+
+        .entry-card {
+            float: none;
+        }
+    }
+
+    &.right {
+        float: right;
+        width: 45%;
+
+        .entry-card {
+            float: none;
         }
     }
 }
@@ -223,7 +243,6 @@ img {
 }
 
 .post-entry-meta {
-    position: absolute;
     top: 8px;
     right: 8px;
     font-size: 14px;
@@ -266,7 +285,6 @@ img {
 }
 
 .post-entry-card {
-    display:inline-block; 
     vertical-align: top;
 }
 
@@ -391,4 +409,13 @@ table {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.body-bg {
+    position: fixed;
+    z-index: -1;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
 }
