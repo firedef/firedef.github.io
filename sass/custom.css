@@ -1040,19 +1040,20 @@ ol {
 .tooltip {
   position: relative;
   display: inline-block;
+  z-index: 5;
 }
 
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 120px;
   background-color: #383a52;
   text-align: center;
-  padding: 5px 0;
-  border-radius: 8px;
+  border-radius: 16px;
   opacity: 0;
+  width: 100%;
+  align-content: center;
   position: absolute;
-  z-index: 1;
-  top: 110%;
+  z-index: 5;
+  top: 0%;
   left: 50%;
   margin-left: -60px;
 }
@@ -1722,6 +1723,60 @@ table {
   margin-bottom: 0;
 }
 
+.about-page-end {
+  background-color: #252831;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.about-page-end:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/3.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+.about-page-end:before {
+  margin-bottom: 0;
+}
+
+.about-page-skills {
+  background-color: #21212f;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.about-page-skills:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/4.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+.about-page-skills:before {
+  margin-bottom: 0;
+}
+
 .page-wrapper {
   max-width: none;
   padding-left: 0px;
@@ -1761,10 +1816,27 @@ table {
   color: #d9b382;
 }
 
+.about-page-label {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3294117647);
+}
+.about-page-label.skills {
+  color: #aeb7ff;
+}
+
 .horizontal-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .home-page-button {
@@ -1772,6 +1844,14 @@ table {
   margin: 16px;
   width: 48px;
   height: 48px;
+}
+
+.tech-button {
+  padding: 4px;
+  margin: 2px;
+  width: 120px;
+  height: 32px;
+  text-align: center;
 }
 
 .nav-button {
@@ -1807,6 +1887,19 @@ table {
   width: 0px;
   height: 0px;
   visibility: hidden;
+}
+
+.about-text {
+  font-weight: bold;
+}
+
+.ugly-photo {
+  width: 128px;
+  border-radius: 32px;
+  align-self: center;
+  margin: auto;
+  margin-bottom: 16px;
+  display: block;
 }
 
 /*# sourceMappingURL=custom.css.map */

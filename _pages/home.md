@@ -13,12 +13,7 @@ disable-center: true
   <div class="entries-list reveal">
       <h1 class="home-page-label firedef">firedef</h1>
       {% include navigation.html %}
-      <div class="horizontal-container">
-        <a class="card home-page-button" href="https://github.com/firedef"><i class="fab fa-github noHover home-page-button-icon"></i></a>
-        <a class="card home-page-button" href="mailto://firedef2019@gmail.com"><i class="fa-solid fa-envelope-open-text noHover home-page-button-icon"></i></a>
-        <a class="card home-page-button" href="https://t.me/firedef"><i class="fab fa-telegram-plane noHover home-page-button-icon"></i></a>
-        <a class="card home-page-button" href="https://www.linkedin.com/in/dmitriy-nosov-06b76221b"><i class="fab fa-linkedin noHover home-page-button-icon"></i></a>
-      </div>
+      {% include links.html %}
   </div>
 </div>
 
@@ -38,7 +33,7 @@ disable-center: true
 
 <div class="home-page-other waypoint">
   <div class="entries-list reveal">
-      <h1 class="home-page-label other">other</h1>
+      <h1 class="home-page-label other">🤨</h1>
   </div>
 </div>
 
