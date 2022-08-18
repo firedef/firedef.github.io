@@ -1145,6 +1145,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry:hover {
   background-color: rgba(79, 86, 97, 0.5);
@@ -1164,6 +1165,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.blue:hover {
   background-color: rgba(74, 83, 105, 0.5);
@@ -1183,6 +1185,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.purple:hover {
   background-color: rgba(78, 76, 105, 0.5);
@@ -1202,6 +1205,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.red:hover {
   background-color: rgba(94, 76, 88, 0.5);
@@ -1221,6 +1225,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.orange:hover {
   background-color: rgba(94, 81, 85, 0.5);
@@ -1240,6 +1245,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.yellow:hover {
   background-color: rgba(94, 90, 85, 0.5);
@@ -1259,6 +1265,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .cardPostEntry.green:hover {
   background-color: rgba(79, 97, 85, 0.5);
@@ -1280,6 +1287,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card:hover {
   background-color: rgba(79, 86, 97, 0.5);
@@ -1299,6 +1307,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.blue:hover {
   background-color: rgba(74, 83, 105, 0.5);
@@ -1318,6 +1327,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.purple:hover {
   background-color: rgba(78, 76, 105, 0.5);
@@ -1337,6 +1347,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.red:hover {
   background-color: rgba(94, 76, 88, 0.5);
@@ -1356,6 +1367,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.orange:hover {
   background-color: rgba(94, 81, 85, 0.5);
@@ -1375,6 +1387,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.yellow:hover {
   background-color: rgba(94, 90, 85, 0.5);
@@ -1394,6 +1407,7 @@ img {
   padding-left: 16px;
   transition: all 0.3s;
   height: 100%;
+  padding: 8px;
 }
 .card.green:hover {
   background-color: rgba(79, 97, 85, 0.5);
@@ -1781,7 +1795,7 @@ table {
 
 .project-card {
   width: 40%;
-  margin: 5%;
+  margin: 32px;
   text-align: center;
 }
 .project-card .entry-card {

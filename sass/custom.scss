@@ -185,6 +185,7 @@ img {
     padding-left: 16px;
     transition: all 0.3s;
     height: 100%;
+    padding: 8px;
 
     &:hover {
         background-color: rgba(mix($base00, $color, 80%), 50%);
@@ -557,7 +558,7 @@ table {
 
 .project-card {
     width: 40%;
-    margin: 5%;
+    margin: 32px;
     text-align: center;
 
     .entry-card {
