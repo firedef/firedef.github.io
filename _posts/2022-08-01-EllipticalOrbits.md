@@ -1,5 +1,6 @@
 ---
 layout: post
+isPost: true
 title:  "Elliptical orbits are hard"
 description: "Time function for elliptical orbits"
 date:   2022-08-01 14:50:00 +0300

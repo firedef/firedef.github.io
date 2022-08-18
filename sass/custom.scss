@@ -184,6 +184,7 @@ img {
     padding: 4px;
     padding-left: 16px;
     transition: all 0.3s;
+    height: 100%;
 
     &:hover {
         background-color: rgba(mix($base00, $color, 80%), 50%);
@@ -444,6 +445,8 @@ table {
         content: "";
         background-size: cover;
         background-image: url($img);
+        contain: paint;
+        shape-rendering: optimizeSpeed;
         position: relative;
         height: 500px;
         width: 100%;
@@ -531,8 +534,52 @@ table {
     height: 48px;
 }
 
+.nav-button {
+    padding: 8px;
+    margin: 8px;
+    color: $text-color;
+    text-decoration: none;
+    width: 128px;
+    text-align: center;
+
+    font-weight: bold;
+
+    &:hover {
+        color: $text-color;
+    }
+}
+
 .home-page-button-icon {
     width: 32px;
     height: 32px;
     color: $text-color;
 }
+
+.project-card {
+    width: 40%;
+    margin: 5%;
+    text-align: center;
+
+    .entry-card {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    .post-entry-meta {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
+}
+
+// html {
+//     scroll-snap-type: y mandatory;
+//     scroll-snap-align: start;
+// }
+
+// .h1,
+// .h2,
+// .waypoint {
+//     scroll-snap-align: start;
+// }

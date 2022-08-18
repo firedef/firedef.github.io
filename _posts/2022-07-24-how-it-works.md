@@ -1,5 +1,6 @@
 ---
 layout: post
+isPost: true
 title:  "How this site works"
 description: "Short article about hosting, technologies and features of this site"
 date:   2022-07-24 15:05:00 +0300

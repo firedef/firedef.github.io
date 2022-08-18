@@ -1,6 +1,8 @@
 ---
 layout: post
 title:  "SomeCharts"
+isPost: true
+isProject: true
 type: project
 description: "SomeCharts is a C# library for data visualisation writen on Avalonia and OpenGl"
 date:   2022-07-24 17:32:00 +0300

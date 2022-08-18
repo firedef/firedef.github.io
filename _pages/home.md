@@ -1,6 +1,7 @@
 ---
 layout: page
 permalink: /
+disable-navigation: true
 disable-center: true
 ---
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -8,9 +9,10 @@ disable-center: true
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
 </script>
 
-<div class="home-page-main">
+<div class="home-page-main waypoint">
   <div class="entries-list reveal">
       <h1 class="home-page-label firedef">firedef</h1>
+      {% include navigation.html %}
       <div class="horizontal-container">
         <a class="card home-page-button" href="https://github.com/firedef"><i class="fab fa-github noHover home-page-button-icon"></i></a>
         <a class="card home-page-button" href="mailto://firedef2019@gmail.com"><i class="fa-solid fa-envelope-open-text noHover home-page-button-icon"></i></a>
@@ -20,25 +22,25 @@ disable-center: true
   </div>
 </div>
 
-<div class="home-page-projects">
+<div class="home-page-projects waypoint">
   <h1 class="home-page-label projects">projects</h1>
   <div class="entries-list reveal">
       {% include projects.html %}
   </div>
 </div>
 
-<div class="home-page-posts">
+<div class="home-page-posts waypoint">
   <h1 class="home-page-label posts">posts</h1>
   <div class="entries-list reveal">
       {% include posts.html %}
   </div>
 </div>
 
-<div class="home-page-other">
+<div class="home-page-other waypoint">
   <div class="entries-list reveal">
       <h1 class="home-page-label other">other</h1>
   </div>
 </div>
 
-<div class="home-page-end">
+<div class="home-page-end waypoint">
 </div>

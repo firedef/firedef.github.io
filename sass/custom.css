@@ -1144,6 +1144,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry:hover {
   background-color: rgba(79, 86, 97, 0.5);
@@ -1162,6 +1163,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.blue:hover {
   background-color: rgba(74, 83, 105, 0.5);
@@ -1180,6 +1182,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.purple:hover {
   background-color: rgba(78, 76, 105, 0.5);
@@ -1198,6 +1201,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.red:hover {
   background-color: rgba(94, 76, 88, 0.5);
@@ -1216,6 +1220,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.orange:hover {
   background-color: rgba(94, 81, 85, 0.5);
@@ -1234,6 +1239,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.yellow:hover {
   background-color: rgba(94, 90, 85, 0.5);
@@ -1252,6 +1258,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .cardPostEntry.green:hover {
   background-color: rgba(79, 97, 85, 0.5);
@@ -1272,6 +1279,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card:hover {
   background-color: rgba(79, 86, 97, 0.5);
@@ -1290,6 +1298,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.blue:hover {
   background-color: rgba(74, 83, 105, 0.5);
@@ -1308,6 +1317,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.purple:hover {
   background-color: rgba(78, 76, 105, 0.5);
@@ -1326,6 +1336,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.red:hover {
   background-color: rgba(94, 76, 88, 0.5);
@@ -1344,6 +1355,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.orange:hover {
   background-color: rgba(94, 81, 85, 0.5);
@@ -1362,6 +1374,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.yellow:hover {
   background-color: rgba(94, 90, 85, 0.5);
@@ -1380,6 +1393,7 @@ img {
   padding: 4px;
   padding-left: 16px;
   transition: all 0.3s;
+  height: 100%;
 }
 .card.green:hover {
   background-color: rgba(79, 97, 85, 0.5);
@@ -1606,6 +1620,8 @@ table {
   content: "";
   background-size: cover;
   background-image: url("/images/Backgrounds/General/Wavy/0.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
   position: relative;
   height: 500px;
   width: 100%;
@@ -1628,6 +1644,8 @@ table {
   content: "";
   background-size: cover;
   background-image: url("/images/Backgrounds/General/Wavy/1.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
   position: relative;
   height: 500px;
   width: 100%;
@@ -1650,6 +1668,8 @@ table {
   content: "";
   background-size: cover;
   background-image: url("/images/Backgrounds/General/Wavy/2.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
   position: relative;
   height: 500px;
   width: 100%;
@@ -1672,6 +1692,8 @@ table {
   content: "";
   background-size: cover;
   background-image: url("/images/Backgrounds/General/Wavy/3.svg");
+  contain: paint;
+  shape-rendering: optimizeSpeed;
   position: relative;
   height: 500px;
   width: 100%;
@@ -1738,10 +1760,39 @@ table {
   height: 48px;
 }
 
+.nav-button {
+  padding: 8px;
+  margin: 8px;
+  color: #bfc5ca;
+  text-decoration: none;
+  width: 128px;
+  text-align: center;
+  font-weight: bold;
+}
+.nav-button:hover {
+  color: #bfc5ca;
+}
+
 .home-page-button-icon {
   width: 32px;
   height: 32px;
   color: #bfc5ca;
+}
+
+.project-card {
+  width: 40%;
+  margin: 5%;
+  text-align: center;
+}
+.project-card .entry-card {
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+.project-card .post-entry-meta {
+  width: 0px;
+  height: 0px;
+  visibility: hidden;
 }
 
 /*# sourceMappingURL=custom.css.map */

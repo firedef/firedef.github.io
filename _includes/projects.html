@@ -1,7 +1,12 @@
 {% assign posts_limit = page.posts_limit | default: 1000 %}
+{% assign extra-class = "project-card" %}
 
-{%- for entry in site.posts limit: posts_limit -%}
-    {% if entry.type == "project" %}
-        {% include postEntry.html %}
-    {% endif %}
-{%- endfor -%}
+<div class="horizontal-container">
+    {%- for entry in site.posts limit: posts_limit -%}
+        {% if entry.isProject %}
+            {% include postEntry.html %}
+        {% endif %}
+    {%- endfor -%}
+</div>
+
+{% assign extra-class = "" %}
