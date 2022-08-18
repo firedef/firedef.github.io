@@ -1264,6 +1264,134 @@ img {
   color: #efffeb;
 }
 
+.card {
+  margin-top: 8px;
+  background-color: rgba(46, 51, 60, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(4, 5, 5, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card:hover {
+  background-color: rgba(79, 86, 97, 0.5);
+  box-shadow: 0px 0px 40px 0px #262c2f;
+}
+.card a {
+  color: #d1e0e6;
+}
+.card a:hover {
+  color: #f0f5f7;
+}
+.card.blue {
+  background-color: rgba(45, 50, 62, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.blue:hover {
+  background-color: rgba(74, 83, 105, 0.5);
+  box-shadow: 0px 0px 40px 0px #222936;
+}
+.card.blue a {
+  color: #c2d7ff;
+}
+.card.blue a:hover {
+  color: #ebf2ff;
+}
+.card.purple {
+  background-color: rgba(46, 48, 62, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(4, 4, 6, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.purple:hover {
+  background-color: rgba(78, 76, 105, 0.5);
+  box-shadow: 0px 0px 40px 0px #262336;
+}
+.card.purple a {
+  color: #cfc2ff;
+}
+.card.purple a:hover {
+  color: #efebff;
+}
+.card.red {
+  background-color: rgba(51, 48, 57, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.red:hover {
+  background-color: rgba(94, 76, 88, 0.5);
+  box-shadow: 0px 0px 40px 0px #352326;
+}
+.card.red a {
+  color: #ffc2ca;
+}
+.card.red a:hover {
+  color: #ffebed;
+}
+.card.orange {
+  background-color: rgba(51, 49, 56, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(6, 4, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.orange:hover {
+  background-color: rgba(94, 81, 85, 0.5);
+  box-shadow: 0px 0px 40px 0px #352724;
+}
+.card.orange a {
+  color: #ffd0c2;
+}
+.card.orange a:hover {
+  color: #ffefeb;
+}
+.card.yellow {
+  background-color: rgba(51, 52, 56, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(6, 5, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.yellow:hover {
+  background-color: rgba(94, 90, 85, 0.5);
+  box-shadow: 0px 0px 40px 0px #352f24;
+}
+.card.yellow a {
+  color: #ffecc2;
+}
+.card.yellow a:hover {
+  color: #fff9eb;
+}
+.card.green {
+  background-color: rgba(46, 54, 56, 0.5);
+  box-shadow: 0px 0px 32px 0px rgba(4, 6, 4, 0.472);
+  border-radius: 16px;
+  padding: 4px;
+  padding-left: 16px;
+  transition: all 0.3s;
+}
+.card.green:hover {
+  background-color: rgba(79, 97, 85, 0.5);
+  box-shadow: 0px 0px 40px 0px #263524;
+}
+.card.green a {
+  color: #d0ffc2;
+}
+.card.green a:hover {
+  color: #efffeb;
+}
+
 .post-entry-meta {
   top: 8px;
   right: 8px;
@@ -1460,6 +1588,160 @@ table {
   bottom: 0px;
   right: 0px;
   left: 0px;
+}
+
+.home-page-main {
+  margin-bottom: 32px;
+}
+
+.home-page-projects {
+  margin-top: 128px;
+  background-color: #434950;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.home-page-projects:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/0.svg");
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+
+.home-page-posts {
+  background-color: #2a394e;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.home-page-posts:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/1.svg");
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+
+.home-page-other {
+  background-color: #21212f;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.home-page-other:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/2.svg");
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+
+.home-page-end {
+  background-color: #252831;
+  padding-top: 0px;
+  padding-bottom: 16px;
+  margin-top: -2px;
+  position: relative;
+}
+.home-page-end:before {
+  content: "";
+  background-size: cover;
+  background-image: url("/images/Backgrounds/General/Wavy/3.svg");
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2px;
+  background-position-y: bottom;
+  display: inline-block;
+  margin-bottom: -8%;
+}
+.home-page-end:before {
+  margin-bottom: 0;
+}
+
+.page-wrapper {
+  max-width: none;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.entries-list {
+  max-width: 1024px;
+  margin: auto;
+}
+
+.page-content-center {
+  max-width: 1024px;
+  margin: auto !important;
+  float: none !important;
+}
+
+.home-page-label {
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.3294117647);
+}
+.home-page-label.projects {
+  color: #aeb7ff;
+}
+.home-page-label.posts {
+  color: #bbffc7;
+}
+.home-page-label.other {
+  color: #d9b382;
+}
+
+.horizontal-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.home-page-button {
+  padding: 8px;
+  margin: 16px;
+  width: 48px;
+  height: 48px;
+}
+
+.home-page-button-icon {
+  width: 32px;
+  height: 32px;
+  color: #bfc5ca;
 }
 
 /*# sourceMappingURL=custom.css.map */

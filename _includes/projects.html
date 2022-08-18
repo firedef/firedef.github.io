@@ -1,0 +1,7 @@
+{% assign posts_limit = page.posts_limit | default: 1000 %}
+
+{%- for entry in site.posts limit: posts_limit -%}
+    {% if entry.type == "project" %}
+        {% include postEntry.html %}
+    {% endif %}
+{%- endfor -%}

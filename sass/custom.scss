@@ -242,6 +242,19 @@ img {
     &.green { @include cardPostEntryMixin(#b1ff99); }
 }
 
+.card {
+    margin-top: 8px;
+
+    @include cardPostEntryMixin($base04);
+    
+    &.blue { @include cardPostEntryMixin(#99bdff); }
+    &.purple { @include cardPostEntryMixin(#af99ff); }
+    &.red { @include cardPostEntryMixin(#ff99a7); }
+    &.orange { @include cardPostEntryMixin(#ffb199); }
+    &.yellow { @include cardPostEntryMixin(#ffdf99); }
+    &.green { @include cardPostEntryMixin(#b1ff99); }
+}
+
 .post-entry-meta {
     top: 8px;
     right: 8px;
@@ -418,4 +431,108 @@ table {
     bottom: 0px;
     right: 0px;
     left: 0px;
+}
+
+@mixin wavy-bg($color, $img) {
+    background-color: $color;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    margin-top: -2px;
+    position: relative;
+
+    &:before {
+        content: "";
+        background-size: cover;
+        background-image: url($img);
+        position: relative;
+        height: 500px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: -2px;
+        background-position-y: bottom;
+        display: inline-block;
+        margin-bottom: -8%;
+    }
+}
+
+.home-page-main {
+    margin-bottom: 32px;
+}
+
+.home-page-projects {
+    margin-top: 128px;
+    @include wavy-bg(#434950, "/images/Backgrounds/General/Wavy/0.svg");
+}
+
+.home-page-posts {
+    @include wavy-bg(#2a394e, "/images/Backgrounds/General/Wavy/1.svg");
+}
+
+.home-page-other {
+    @include wavy-bg(#21212f, "/images/Backgrounds/General/Wavy/2.svg");
+}
+
+.home-page-end {
+    @include wavy-bg(#252831, "/images/Backgrounds/General/Wavy/3.svg");
+    &:before { margin-bottom: 0; }
+}
+
+.page-wrapper {
+    max-width: none;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.entries-list {
+    max-width: 1024px;
+    margin: auto;
+}
+
+.page-content-center {
+    max-width: 1024px;
+    margin: auto !important;
+    float: none !important;
+}
+
+.home-page-label {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    margin: auto;
+    margin-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    letter-spacing: 8px;
+    text-shadow: 0 0 20px #00000054;
+    
+    &.projects {
+        color: #aeb7ff;
+    }
+    &.posts {
+        color: #bbffc7;
+    }
+    &.other {
+        color: #d9b382;
+    }
+}
+
+.horizontal-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.home-page-button {
+    padding: 8px;
+    margin: 16px;
+    width: 48px;
+    height: 48px;
+}
+
+.home-page-button-icon {
+    width: 32px;
+    height: 32px;
+    color: $text-color;
 }
