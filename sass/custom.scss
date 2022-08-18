@@ -404,14 +404,19 @@ table {
 }
 
 .reveal {
-    opacity: 0%;
-    transition: 0.5s all;
     position: relative;
-    transform: translateY(100px);
+    opacity: 100%;
+    transform: translateY(0px);
 
-    &.active {
-        opacity: 1000%;
-        transform: translateY(0px);
+    @media only screen and (min-width: 800px) {
+        opacity: 0%;
+        transition: 0.5s all;
+        transform: translateY(100px);
+
+        &.active {
+            opacity: 100%;
+            transform: translateY(0px);
+        }
     }
 }
 
@@ -437,27 +442,30 @@ table {
 }
 
 @mixin wavy-bg($color, $img) {
-    background-color: $color;
     padding-top: 0px;
     padding-bottom: 16px;
     margin-top: -2px;
     position: relative;
 
-    &:before {
-        content: "";
-        background-size: cover;
-        background-image: url($img);
-        contain: paint;
-        shape-rendering: optimizeSpeed;
-        position: relative;
-        height: 500px;
-        width: 100%;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: -2px;
-        background-position-y: bottom;
-        display: inline-block;
-        margin-bottom: -8%;
+    @media only screen and (min-width:600px) {
+        background-color: $color;
+
+        &:before {
+            content: "";
+            background-size: cover;
+            background-image: url($img);
+            contain: paint;
+            shape-rendering: optimizeSpeed;
+            position: relative;
+            height: 500px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: -2px;
+            background-position-y: bottom;
+            display: inline-block;
+            margin-bottom: -8%;
+        }
     }
 }
 

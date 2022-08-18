@@ -1585,14 +1585,20 @@ table {
 }
 
 .reveal {
-  opacity: 0%;
-  transition: 0.5s all;
   position: relative;
-  transform: translateY(100px);
-}
-.reveal.active {
-  opacity: 1000%;
+  opacity: 100%;
   transform: translateY(0px);
+}
+@media only screen and (min-width: 800px) {
+  .reveal {
+    opacity: 0%;
+    transition: 0.5s all;
+    transform: translateY(100px);
+  }
+  .reveal.active {
+    opacity: 100%;
+    transform: translateY(0px);
+  }
 }
 
 @keyframes flickeringAnim {
@@ -1625,153 +1631,177 @@ table {
 
 .home-page-projects {
   margin-top: 128px;
-  background-color: #434950;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.home-page-projects:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/0.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .home-page-projects {
+    background-color: #434950;
+  }
+  .home-page-projects:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/0.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 
 .home-page-posts {
-  background-color: #2a394e;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.home-page-posts:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/1.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .home-page-posts {
+    background-color: #2a394e;
+  }
+  .home-page-posts:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/1.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 
 .home-page-other {
-  background-color: #21212f;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.home-page-other:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/2.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .home-page-other {
+    background-color: #21212f;
+  }
+  .home-page-other:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/2.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 
 .home-page-end {
-  background-color: #252831;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.home-page-end:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/3.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .home-page-end {
+    background-color: #252831;
+  }
+  .home-page-end:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/3.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 .home-page-end:before {
   margin-bottom: 0;
 }
 
 .about-page-end {
-  background-color: #252831;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.about-page-end:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/3.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .about-page-end {
+    background-color: #252831;
+  }
+  .about-page-end:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/3.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 .about-page-end:before {
   margin-bottom: 0;
 }
 
 .about-page-skills {
-  background-color: #21212f;
   padding-top: 0px;
   padding-bottom: 16px;
   margin-top: -2px;
   position: relative;
 }
-.about-page-skills:before {
-  content: "";
-  background-size: cover;
-  background-image: url("/images/Backgrounds/General/Wavy/4.svg");
-  contain: paint;
-  shape-rendering: optimizeSpeed;
-  position: relative;
-  height: 500px;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  top: -2px;
-  background-position-y: bottom;
-  display: inline-block;
-  margin-bottom: -8%;
+@media only screen and (min-width: 600px) {
+  .about-page-skills {
+    background-color: #21212f;
+  }
+  .about-page-skills:before {
+    content: "";
+    background-size: cover;
+    background-image: url("/images/Backgrounds/General/Wavy/4.svg");
+    contain: paint;
+    shape-rendering: optimizeSpeed;
+    position: relative;
+    height: 500px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: -2px;
+    background-position-y: bottom;
+    display: inline-block;
+    margin-bottom: -8%;
+  }
 }
 .about-page-skills:before {
   margin-bottom: 0;

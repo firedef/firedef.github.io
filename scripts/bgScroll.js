@@ -1,6 +1,8 @@
 var previousScroll = 0;
 
 function bgScroll() {
+  if (window.innerWidth < 800) return;
+
   var reveals = document.querySelectorAll(".scroll-bg");
   for (var i = 0; i < reveals.length; i++) {
     var windowHeight = window.innerHeight;
