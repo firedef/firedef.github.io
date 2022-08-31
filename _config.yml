@@ -9,6 +9,7 @@ words_per_minute: 200
 
 # Build settings
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
 
 markdown: kramdown

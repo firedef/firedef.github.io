@@ -1079,6 +1079,16 @@ h3 {
   margin-bottom: 0px;
 }
 
+h4 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
+h5 {
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+
 figure,
 video,
 img {
@@ -1637,9 +1647,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .home-page-projects {
-    background-color: #434950;
-  }
   .home-page-projects:before {
     content: "";
     background-size: cover;
@@ -1656,6 +1663,15 @@ table {
     display: inline-block;
     margin-bottom: -8%;
   }
+  .home-page-projects:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #434950;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .home-page-posts {
@@ -1665,9 +1681,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .home-page-posts {
-    background-color: #2a394e;
-  }
   .home-page-posts:before {
     content: "";
     background-size: cover;
@@ -1684,6 +1697,15 @@ table {
     display: inline-block;
     margin-bottom: -8%;
   }
+  .home-page-posts:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #2a394e;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .home-page-other {
@@ -1693,9 +1715,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .home-page-other {
-    background-color: #21212f;
-  }
   .home-page-other:before {
     content: "";
     background-size: cover;
@@ -1712,6 +1731,15 @@ table {
     display: inline-block;
     margin-bottom: -8%;
   }
+  .home-page-other:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #21212f;
+    position: absolute;
+    z-index: -1;
+  }
 }
 
 .home-page-end {
@@ -1721,9 +1749,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .home-page-end {
-    background-color: #252831;
-  }
   .home-page-end:before {
     content: "";
     background-size: cover;
@@ -1740,9 +1765,21 @@ table {
     display: inline-block;
     margin-bottom: -8%;
   }
+  .home-page-end:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #252831;
+    position: absolute;
+    z-index: -1;
+  }
 }
 .home-page-end:before {
   margin-bottom: 0;
+}
+.home-page-end:after {
+  width: 0;
 }
 
 .about-page-end {
@@ -1752,9 +1789,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .about-page-end {
-    background-color: #252831;
-  }
   .about-page-end:before {
     content: "";
     background-size: cover;
@@ -1771,9 +1805,21 @@ table {
     display: inline-block;
     margin-bottom: -8%;
   }
+  .about-page-end:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #252831;
+    position: absolute;
+    z-index: -1;
+  }
 }
 .about-page-end:before {
   margin-bottom: 0;
+}
+.about-page-end:after {
+  width: 0;
 }
 
 .about-page-skills {
@@ -1783,9 +1829,6 @@ table {
   position: relative;
 }
 @media only screen and (min-width: 600px) {
-  .about-page-skills {
-    background-color: #21212f;
-  }
   .about-page-skills:before {
     content: "";
     background-size: cover;
@@ -1801,6 +1844,15 @@ table {
     background-position-y: bottom;
     display: inline-block;
     margin-bottom: -8%;
+  }
+  .about-page-skills:after {
+    content: "";
+    top: 498px;
+    height: 100%;
+    width: 100%;
+    background-color: #21212f;
+    position: absolute;
+    z-index: -1;
   }
 }
 .about-page-skills:before {
@@ -1869,6 +1921,13 @@ table {
   flex-wrap: wrap;
 }
 
+.vertical-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .home-page-button {
   padding: 8px;
   margin: 16px;
@@ -1930,6 +1989,47 @@ table {
   margin: auto;
   margin-bottom: 16px;
   display: block;
+}
+
+.side-nav-button {
+  position: fixed;
+  width: 120px;
+  height: 32px;
+  background-color: rgba(100, 119, 161, 0.3490196078);
+  top: 50%;
+  content: "hi";
+  color: #adf3ad;
+  border-radius: 0px 16px 16px 0px;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Montserrat;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+.card.unloaded {
+  transform: scale(0, 0);
+}
+
+.other {
+  transition: transform 2.3s;
+}
+.other.unloaded {
+  transform: scale(0.5, 0.5);
+  transform: rotate3d(1.9, -1.2, -1.3, 222deg);
+}
+
+.page {
+  transition: filter 0.3s ease;
+}
+.page.unloaded {
+  filter: blur(8px);
+}
+
+footer .horizontal-container {
+  justify-content: space-evenly;
 }
 
 /*# sourceMappingURL=custom.css.map */

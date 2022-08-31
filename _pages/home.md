@@ -33,7 +33,7 @@ disable-center: true
 
 <div class="home-page-other waypoint">
   <div class="entries-list reveal">
-      <h1 class="home-page-label other">🤨</h1>
+      <h1 class="home-page-label other loader unloaded">🤨</h1>
   </div>
 </div>
 
