@@ -4,7 +4,7 @@
   {% assign title = entry.title %}
 {% endif %}
 
-<article class="entry h-entry reveal {{ entry.extra.class.entry }} waypoint {{ extra-class }}">
+<article class="entry h-entry {{ entry.extra.class.entry }} waypoint {{ extra-class }}">
     <header class="cardPostEntry entry-header {{ entry.color }} bg-before-scroll {{ entry.extra.class.card }}" style="{{ entry.extra.style.card }}">
       <a href="{{ entry.url | relative_url }}" rel="bookmark" style="display: contents; top:0px; left:0px; right:0px; bottom:0px;">
         <div width="100%">

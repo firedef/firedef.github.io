@@ -1,7 +1,17 @@
-{% assign posts_limit = page.posts_limit | default: 1000 %}
+{% assign posts_limit = page.posts_limit | default: 5 %}
 
-{%- for entry in site.posts limit: posts_limit -%}
+{% assign i = 0 %}
+{%- for entry in site.posts -%}
+  {% if i >= posts_limit %}
+    {% assign showMore = true %}
+    {% break %}
+  {% endif %}
   {% if entry.isPost %}
     {% include postEntry.html %}
+    {% assign i = i | plus: 1 %}
   {% endif %}
 {%- endfor -%}
+
+{% if showMore %}
+  <a href="/posts" class="button center">show more</a>
+{% endif %}

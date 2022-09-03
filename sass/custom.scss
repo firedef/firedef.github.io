@@ -41,6 +41,10 @@ $base0f: #ff889c;
 
 @import "so-simple/skin";
 
+head {
+    min-width: 256px;
+}
+
 .page-title,
 .entry-title {
     font-style: normal;
@@ -192,7 +196,7 @@ img {
     border-radius: 16px;
     padding: 4px;
     padding-left: 16px;
-    transition: all 0.3s;
+    transition: color 0.3s, background-color 0.3s, box-shadow 0.3s;
     height: 100%;
     padding: 8px;
 
@@ -227,7 +231,18 @@ img {
             float: none;
         }
     }
+
+
+    
 }
+
+.entries-list .entry {
+    @media all and (max-width: 400px) {
+        width: 100%;
+    }
+}
+
+
 
 .card-bg {
     background-size: cover;
@@ -239,7 +254,7 @@ img {
     border-radius: 16px;
     z-index: -1;
     background-position-y: 0px;
-    transition: all 0.3s;
+    transition: background-position-y 0.3s;
 }
 
 .cardPostEntry {
@@ -374,10 +389,10 @@ table {
 
 ::-webkit-scrollbar-thumb {
     background: $base02;
-    transition: all 0.3s;
+    transition: background-color 0.3s;
     border-radius: 4px;
     &:hover {
-        background: $base03;
+        background-color: $base03;
     }
 }
 
@@ -418,7 +433,7 @@ table {
 
     @media only screen and (min-width: 800px) {
         opacity: 0%;
-        transition: 0.5s all;
+        transition: 0.5s transform, 0.5s opacity;
         transform: translateY(100px);
 
         &.active {
@@ -440,6 +455,7 @@ table {
     animation-direction: alternate;
 }
 
+
 .body-bg {
     position: fixed;
     z-index: -1;
@@ -447,6 +463,7 @@ table {
     bottom: 0px;
     right: 0px;
     left: 0px;
+    background-size: 100vw;
 }
 
 @mixin wavy-bg($color, $img, $pos) {
@@ -563,6 +580,17 @@ table {
     &.other {
         color: #d9b382;
     }
+
+    @media all and (max-width: 250px) {
+        font-size: 24px;
+        margin-right: 0;
+        margin-left: 0;
+        letter-spacing: 0px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 32px; 
+    }
 }
 
 .about-page-label {
@@ -579,6 +607,17 @@ table {
     
     &.skills {
         color: #aeb7ff;
+    }
+   
+    @media all and (max-width: 250px) {
+        font-size: 24px;
+        margin-right: 0;
+        margin-left: 0;
+        letter-spacing: 0px;
+    }
+
+    @media all and (max-width: 400px) {
+        font-size: 32px; 
     }
 }
 
@@ -716,5 +755,75 @@ table {
 footer {
     .horizontal-container {
         justify-content: space-evenly;
+    }
+}
+
+@mixin button-mixin($color) {
+    background-color: rgba(mix($background-color, $color, 80%), 100%);
+    color: mix($text-color, $color, 40%);
+    box-shadow: 0px 0px 32px 0px mix(#0007, $color, 99%);
+    border-radius: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+    padding: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 8px;
+    display: inline;
+    font-family: Montserrat;
+    font-weight:600;
+    text-decoration: none;
+
+    &:hover {
+        background-color: rgba(mix($base00, $color, 30%), 50%);
+        box-shadow: 0px 0px 40px 0px mix(#000f, $color, 80%);
+        color: mix($text-color, $color, 40%);
+    }
+}
+
+.button {
+    @include button-mixin($base04);
+    
+    &.blue { @include button-mixin(#99bdff); }
+    &.purple { @include button-mixin(#af99ff); }
+    &.red { @include button-mixin(#ff99a7); }
+    &.orange { @include button-mixin(#ffb199); }
+    &.yellow { @include button-mixin(#ffdf99); }
+    &.green { @include button-mixin(#b1ff99); }
+
+    &.center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+        margin-top: -4px;
+    }
+}
+
+.timeline-node {
+    width: 32px;
+    height: 32px;
+    background-color: mix($background-color, $base04, 80%);
+    border-radius: 16px;
+}
+
+.posts-timeline-txt {
+    font-family: Montserrat;
+    font-weight:600;
+    opacity: 0.4;
+    font-size: 32px;
+    text-align: center;
+}
+.posts-timeline-block {
+    contain: paint;
+
+    @media all and (min-width: 500px) {
+        padding: 16px;
+        margin-top: 32px;
+    }
+
+    @media all and (min-width: 300px) {
+        background-color: rgba($base04, 2%);
+        border-radius: 16px;
+        box-shadow: 0px 0px 24px 0px #0001;
     }
 }

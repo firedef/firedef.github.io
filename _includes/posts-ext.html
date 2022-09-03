@@ -1,0 +1,22 @@
+{% assign date = 0 | date: "%m" %}
+
+{% assign blockCount = 0 %}
+{%- for entry in site.posts -%}
+  {% if entry.isPost %}
+    {% assign diffMonths = entry.date | date: "%m" | minus: date %}
+    {% if diffMonths != 0 %}
+        {% if blockCount != 0 %}
+            </div>
+        {% endif%}
+        <div class="posts-timeline-block reveal">
+        <div class="posts-timeline-txt">{{ entry.date | date: "%b %Y" }}</div>
+        {% assign date = entry.date | date: "%m" %}
+        {% assign blockCount = blockCount | plus: 1 %}
+    {% endif %}
+    {% include postEntry.html %}
+  {% endif %}
+{%- endfor -%}
+
+{% if blockCount != 0 %}
+    </div>
+{% endif%}

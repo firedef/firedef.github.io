@@ -2,6 +2,7 @@ var previousScroll = 0;
 
 function bgScroll() {
   if (window.innerWidth < 800) return;
+  //let time = Math.sin(Date.now() * 0.001) * 40.0;
 
   var reveals = document.querySelectorAll(".scroll-bg");
   for (var i = 0; i < reveals.length; i++) {
@@ -34,5 +35,6 @@ function bgScroll() {
   }
 }
     
+setInterval(bgScroll, 1000);
 window.addEventListener("scroll", bgScroll);
 bgScroll();
