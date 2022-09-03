@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onpageshow = function() {
     var objs = document.querySelectorAll(".loader");
     for (var i = 0; i < objs.length; i++) 
         objs[i].classList.remove("unloaded");
