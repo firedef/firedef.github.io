@@ -10,8 +10,8 @@ image:
   thumbnail: /images/Thumbnails/EllipticalOrbitsThumb.png
 related: 
   - /astrus
+math: true
 ---
-{% include math %}
 
 # Elliptical orbits
 My game, i'm working on, uses circular orbits. They are really easy to compute and maintain. But they, well... circular. I want to add stretched orbits for some objects. So i made a little research about how they works. By now i only need time function, so in this article i will present equations and code required to achive it.

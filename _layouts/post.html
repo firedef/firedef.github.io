@@ -45,6 +45,12 @@ layout: default
             </p>
           {% endif %}
 
+          {% if page.math %}
+            <p class="notice--info">
+              <i class="fa-solid fa-square-root-variable notice-icon"></i> This page contains math formulas. If it doesn't load, reload the page
+            </p>
+          {% endif %}
+
           {{ content }}
         </div>
 

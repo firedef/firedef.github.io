@@ -32,7 +32,7 @@ $base06: #eeffff;
 $base07: #ffffff;
 $base08: #f09297;
 $base09: #f1a189;
-$base0a: #ffd382;
+$base0a: #ffeecd;
 $base0b: #adf3ad;
 $base0c: #89ddff;
 $base0d: #abc6ff;
@@ -91,7 +91,7 @@ ol {
     font-weight: 900;
     padding: 4px 8px 4px 8px;
     margin: 4px 4px 4px 0px;
-    border-radius: 8px;
+    border-radius: 4px;
     text-decoration: none;
     opacity: 80%;
     min-width: 64px;
@@ -165,6 +165,7 @@ video,
 img { 
     box-shadow: 0px 0px 20px 0px #00000054;
     border-radius: 16px;
+    contain: content;
 }
 
 .entry-card-img {
@@ -626,6 +627,9 @@ table {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
 }
 
 .vertical-container {
@@ -633,6 +637,9 @@ table {
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
+    &.nowrap {
+        flex-wrap: nowrap;
+    }
 }
 
 .home-page-button {
@@ -691,15 +698,86 @@ table {
 
 .about-text {
     font-weight: bold;
+    font-size: 21px;
+
+    &.first {
+        margin: 32px;
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+    &.second {
+        font-size: 18px;
+        margin: 32px;
+        margin-top: 64px;
+        margin-bottom: 16px;
+    }
+    &.third {
+        font-size: 18px;
+        margin: 32px;
+        margin-top: 16px;
+    }
+}
+
+.quote {
+    width: 42px;
+    height: 42px;
+    vertical-align: middle;
+}
+
+.quote-text {
+    font-family: "Caveat";
+    display: block;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 24px;
+    color: $base0a;
+    // &:before {
+    //     position: absolute;
+    //     color: $base01;
+    //     font-size: 80px;
+    //     content: '“';
+	//     left: 4px;
+    // }
+    // &:after {
+    //     position: absolute;
+    //     color: $base01;
+    //     font-size: 80px;
+    //     content: '”';
+	//     right: 4px;
+    // }
+}
+
+.review {
+    font-size: 21px;
+    margin: 16px;
+
+    .review-text-sub {
+        font-family: "Caveat";
+        font-size: 22px;
+        opacity: 0.5;
+        text-decoration: none;
+        text-align: right;
+    }
+}
+
+.about-first {
+    align-items: center;
+    @media all and (max-width: 800px) {
+        flex-direction: column;
+    }
 }
 
 .ugly-photo {
     width: 128px;
-    border-radius: 32px;
+    border-radius: 16px;
     align-self: center;
     margin: auto;
     margin-bottom: 16px;
     display: block;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 // html {
@@ -826,4 +904,19 @@ footer {
         border-radius: 16px;
         box-shadow: 0px 0px 24px 0px #0001;
     }
+}
+
+p {
+    margin: 0px;
+}
+
+.tech-button {
+    border-radius: 4px;
+    width: 120px;
+    height: 120px;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
