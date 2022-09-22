@@ -813,27 +813,27 @@ ol {
 .known1 {
   color: #ff99d1; }
   .known1:hover {
-    color: #ff99d1; }
+    color: #363944; }
 
 .known2 {
-  color: #a9f; }
+  color: #aa99ff; }
   .known2:hover {
-    color: #a9f; }
+    color: #363944; }
 
 .known3 {
   color: #99bdff; }
   .known3:hover {
-    color: #99bdff; }
+    color: #363944; }
 
 .known4 {
   color: #99fffa; }
   .known4:hover {
-    color: #99fffa; }
+    color: #363944; }
 
 .known5 {
   color: #aaff99; }
   .known5:hover {
-    color: #aaff99; }
+    color: #363944; }
 
 /* Tooltip container */
 .tooltip {
@@ -851,9 +851,32 @@ ol {
   align-content: center;
   position: absolute;
   z-index: 5;
-  top: 0%;
-  left: 50%;
-  margin-left: -60px; }
+  padding: 4px;
+  margin: 2px;
+  text-align: center;
+  border-radius: 4px;
+  width: 120px;
+  height: 120px;
+  font-size: 24px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+
+.known1 .tooltiptext {
+  background-color: #fd98d0; }
+
+.known2 .tooltiptext {
+  background-color: #a998fd; }
+
+.known3 .tooltiptext {
+  background-color: #98bcfd; }
+
+.known4 .tooltiptext {
+  background-color: #98fdf8; }
+
+.known5 .tooltiptext {
+  background-color: #a9fd98; }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
@@ -1571,6 +1594,8 @@ table {
   text-shadow: 0 0 20px #00000054; }
   .about-page-label.skills {
     color: #aeb7ff; }
+  .about-page-label.reviews {
+    color: #ffd5ae; }
   @media all and (max-width: 250px) {
     .about-page-label {
       font-size: 24px;
@@ -1603,13 +1628,6 @@ table {
   width: 48px;
   height: 48px; }
 
-.tech-button {
-  padding: 4px;
-  margin: 2px;
-  width: 120px;
-  height: 32px;
-  text-align: center; }
-
 .nav-button {
   padding: 8px;
   margin: 8px;
@@ -1640,7 +1658,6 @@ table {
     visibility: hidden; }
 
 .about-text {
-  font-weight: bold;
   font-size: 21px; }
   .about-text.first {
     margin: 32px;
@@ -1892,9 +1909,13 @@ p {
   margin: 0px; }
 
 .tech-button {
+  padding: 4px;
+  margin: 2px;
+  text-align: center;
   border-radius: 4px;
   width: 120px;
   height: 120px;
+  font-size: 24px;
   display: flex;
   align-content: center;
   justify-content: center;

@@ -104,11 +104,11 @@ ol {
     }
 }
 
-.known1 { color: #ff99d1; &:hover { color: #ff99d1; } }
-.known2 { color: #a9f; &:hover { color: #a9f; } }
-.known3 { color: #99bdff; &:hover { color: #99bdff; } }
-.known4 { color: #99fffa; &:hover { color: #99fffa; } }
-.known5 { color: #aaff99; &:hover { color: #aaff99; } }
+.known1 { color: #ff99d1; &:hover { color: $base00; } }
+.known2 { color: #aa99ff; &:hover { color: $base00; } }
+.known3 { color: #99bdff; &:hover { color: $base00; } }
+.known4 { color: #99fffa; &:hover { color: $base00; } }
+.known5 { color: #aaff99; &:hover { color: $base00; } }
 
 /* Tooltip container */
 .tooltip {
@@ -116,7 +116,7 @@ ol {
     display: inline-block;
     z-index: 5;
 }
-  
+
 .tooltip .tooltiptext {
     visibility: hidden;
     background-color: #383a52;
@@ -128,10 +128,27 @@ ol {
 
     position: absolute;
     z-index: 5;
-    top: 0%;
-    left: 50%;
-    margin-left: -60px;
+
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+
+    border-radius: 4px;
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
+
+.known1 { .tooltiptext { background-color: mix($background-color, #ff99d1, 0.8); } }
+.known2 { .tooltiptext { background-color: mix($background-color, #a9f, 0.8); } }
+.known3 { .tooltiptext { background-color: mix($background-color, #99bdff, 0.8); } }
+.known4 { .tooltiptext { background-color: mix($background-color, #99fffa, 0.8); } }
+.known5 { .tooltiptext { background-color: mix($background-color, #aaff99, 0.8); } }
   
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -609,6 +626,9 @@ table {
     &.skills {
         color: #aeb7ff;
     }
+    &.reviews {
+        color: #ffd5ae;
+    }
    
     @media all and (max-width: 250px) {
         font-size: 24px;
@@ -649,13 +669,13 @@ table {
     height: 48px;
 }
 
-.tech-button {
-    padding: 4px;
-    margin: 2px;
-    width: 120px;
-    height: 32px;
-    text-align: center;
-}
+// .tech-button {
+//     padding: 4px;
+//     margin: 2px;
+//     width: 120px;
+//     height: 32px;
+//     text-align: center;
+// }
 
 .nav-button {
     padding: 8px;
@@ -697,7 +717,7 @@ table {
 }
 
 .about-text {
-    font-weight: bold;
+    //font-weight: bold;
     font-size: 21px;
 
     &.first {
@@ -911,9 +931,14 @@ p {
 }
 
 .tech-button {
+    padding: 4px;
+    margin: 2px;
+    text-align: center;
+
     border-radius: 4px;
     width: 120px;
     height: 120px;
+    font-size: 24px;
     
     display: flex;
     align-content: center;
