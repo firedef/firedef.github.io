@@ -1,43 +1,15 @@
 @charset "utf-8";
 
+@import "custom/colors.scss";
 @import "so-simple/functions";
 @import "so-simple/variables";
 @import "so-simple/notices";
+@import "custom/resume.scss";
 
 $serif-font-family: "Comfortaa", serif;
 
 /* Colors */
-$base-color: #eaeaea !default;
-$text-color: #bfc5ca !default;
-$accent-color: #d4a747 !default;
-$nav-color: #aeaeae !default;
-$background-color: #252831 !default;
-$nav-background-color: mix(#000, $background-color, 30%) !default;
-$code-background-color: mix(#000, $background-color, 15%) !default;
-$border-color: mix(rgb(255, 255, 255), $background-color, 10%) !default;
 
-$primary-color: white !default;
-$success-color: rgb(164, 255, 187) !default;
-$warning-color: rgb(255, 243, 184) !default;
-$danger-color: rgb(255, 162, 158) !default;
-$info-color: rgb(179, 233, 255) !default;
-
-$base00: #363944;
-$base01: #434755;
-$base02: #494e5e;
-$base03: #707892;
-$base04: #b2ccd6;
-$base05: #eef7ff;
-$base06: #eeffff;
-$base07: #ffffff;
-$base08: #f09297;
-$base09: #f1a189;
-$base0a: #ffeecd;
-$base0b: #adf3ad;
-$base0c: #89ddff;
-$base0d: #abc6ff;
-$base0e: #cca7e6;
-$base0f: #ff889c;
 
 @import "so-simple/skin";
 
@@ -124,6 +96,7 @@ ol {
     border-radius: 16px;
     opacity: 0;
     width: 100%;
+    height: 100%;
     align-content: center;
 
     position: absolute;
@@ -134,8 +107,8 @@ ol {
     text-align: center;
 
     border-radius: 4px;
-    width: 120px;
-    height: 120px;
+    //width: 120px;
+    //height: 120px;
     font-size: 24px;
     
     display: flex;
@@ -378,6 +351,9 @@ img {
     font-size: 22px !important;
 }
 
+.icon {
+    padding: 4px;
+}
 .notice-icon {
     width: 32px;
     height: 32px;
@@ -791,6 +767,8 @@ table {
 
 .ugly-photo {
     width: 128px;
+    height: 128px;
+    background-size: cover;
     border-radius: 16px;
     align-self: center;
     margin: auto;
@@ -867,9 +845,10 @@ footer {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight:600;
+    font-weight:bold;
     text-decoration: none;
+    border: none;
+    cursor: pointer;
 
     &:hover {
         background-color: rgba(mix($base00, $color, 30%), 50%);
@@ -878,7 +857,7 @@ footer {
     }
 }
 
-.button {
+button, .button {
     @include button-mixin($base04);
     
     &.blue { @include button-mixin(#99bdff); }

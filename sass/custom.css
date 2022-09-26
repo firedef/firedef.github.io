@@ -44,6 +44,93 @@
  *  Text for the notice
  *  </div>
  */
+.resume-panel-small {
+  background-color: #363944;
+  color: #bfc5ca;
+  border-radius: 8px;
+  padding: 32px; }
+  @media all and (min-width: 800px) {
+    .resume-panel-small {
+      visibility: hidden;
+      display: none; } }
+
+.resume-panel {
+  margin: auto;
+  background-color: white;
+  color: #363944;
+  padding: 32px;
+  border-radius: 4px;
+  width: 793px;
+  height: 1122px;
+  font-size: 16px;
+  transition: 1s;
+  box-shadow: 0 0 20px #00000054; }
+  @media all and (max-width: 800px) {
+    .resume-panel {
+      visibility: hidden;
+      display: none; } }
+  .resume-panel a {
+    color: #363944;
+    text-decoration: none; }
+  [pdf-style="styled"] .resume-panel {
+    background-color: #363944;
+    background-image: url("../../images/Backgrounds/General/Bg/resume-panel-dark.svg");
+    color: #bfc5ca;
+    border-radius: 16px; }
+    [pdf-style="styled"] .resume-panel a {
+      color: #ffeecd; }
+      [pdf-style="styled"] .resume-panel a:hover {
+        color: #d4a747; }
+  [pdf-style="normal"] .resume-panel {
+    box-shadow: 0 0 20px #ffffff40; }
+    [pdf-style="normal"] .resume-panel b {
+      opacity: 0.7; }
+
+[pdf-style="normal"] .resume-switch-style-button:after {
+  content: "normal"; }
+[pdf-style="styled"] .resume-switch-style-button:after {
+  content: "styled"; }
+@media all and (max-width: 800px) {
+  .resume-switch-style-button {
+    pointer-events: none;
+    opacity: 40%; }
+    .resume-switch-style-button:after {
+      content: "small" !important; } }
+
+.resume-panel .grid-container {
+  display: grid;
+  grid-template-areas: 'h h h h' 'p c c c' 'l c c c' 'l c c c' 'f f f f';
+  padding: 10px; }
+.resume-panel .item1 {
+  grid-area: h;
+  position: relative;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: auto;
+  margin-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  letter-spacing: 8px;
+  text-shadow: 0 0 20px #00000054; }
+.resume-panel .item2 {
+  grid-area: p;
+  width: 200px; }
+  .resume-panel .item2 .ugly-photo {
+    margin-left: 0px;
+    width: 180px;
+    height: 180px; }
+    [pdf-style="styled"] .resume-panel .item2 .ugly-photo {
+      box-shadow: none; }
+.resume-panel .item3 {
+  grid-area: c; }
+.resume-panel .item4 {
+  grid-area: l; }
+  .resume-panel .item4 a {
+    font-size: 12px; }
+.resume-panel .item5 {
+  grid-area: f; }
+
 /* Colors */
 /* ==========================================================================
    Base elements
@@ -848,6 +935,7 @@ ol {
   border-radius: 16px;
   opacity: 0;
   width: 100%;
+  height: 100%;
   align-content: center;
   position: absolute;
   z-index: 5;
@@ -855,8 +943,6 @@ ol {
   margin: 2px;
   text-align: center;
   border-radius: 4px;
-  width: 120px;
-  height: 120px;
   font-size: 24px;
   display: flex;
   align-content: center;
@@ -1255,6 +1341,9 @@ img {
 
 .entries-list-in-page .entry-title {
   font-size: 22px !important; }
+
+.icon {
+  padding: 4px; }
 
 .notice-icon {
   width: 32px;
@@ -1706,6 +1795,8 @@ table {
 
 .ugly-photo {
   width: 128px;
+  height: 128px;
+  background-size: cover;
   border-radius: 16px;
   align-self: center;
   margin: auto;
@@ -1747,7 +1838,7 @@ table {
 footer .horizontal-container {
   justify-content: space-evenly; }
 
-.button {
+button, .button {
   background-color: #414952;
   color: #b7c9d1;
   box-shadow: 0px 0px 32px 0px rgba(6, 7, 7, 0.472);
@@ -1758,14 +1849,15 @@ footer .horizontal-container {
   padding-right: 16px;
   margin: 8px;
   display: inline;
-  font-family: Montserrat;
-  font-weight: 600;
-  text-decoration: none; }
-  .button:hover {
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer; }
+  button:hover, .button:hover {
     background-color: rgba(141, 160, 170, 0.5);
     box-shadow: 0px 0px 40px 0px #24292b;
     color: #b7c9d1; }
-  .button.blue {
+  button.blue, .button.blue {
     background-color: #3c465a;
     color: #a8c0ea;
     box-shadow: 0px 0px 32px 0px rgba(5, 6, 8, 0.472);
@@ -1776,14 +1868,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.blue:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.blue:hover, .button.blue:hover {
       background-color: rgba(123, 149, 199, 0.5);
       box-shadow: 0px 0px 40px 0px #1f2633;
       color: #a8c0ea; }
-  .button.purple {
+  button.purple, .button.purple {
     background-color: #413f5a;
     color: #b5abea;
     box-shadow: 0px 0px 32px 0px rgba(6, 5, 8, 0.472);
@@ -1794,14 +1887,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.purple:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.purple:hover, .button.purple:hover {
       background-color: rgba(139, 124, 199, 0.5);
       box-shadow: 0px 0px 40px 0px #231f33;
       color: #b5abea; }
-  .button.red {
+  button.red, .button.red {
     background-color: #513f49;
     color: #e5abb5;
     box-shadow: 0px 0px 32px 0px rgba(8, 5, 5, 0.472);
@@ -1812,14 +1906,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.red:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.red:hover, .button.red:hover {
       background-color: rgba(195, 124, 137, 0.5);
       box-shadow: 0px 0px 40px 0px #331f21;
       color: #e5abb5; }
-  .button.orange {
+  button.orange, .button.orange {
     background-color: #514346;
     color: #e5b9ad;
     box-shadow: 0px 0px 32px 0px rgba(8, 6, 5, 0.472);
@@ -1830,14 +1925,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.orange:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.orange:hover, .button.orange:hover {
       background-color: rgba(195, 141, 128, 0.5);
       box-shadow: 0px 0px 40px 0px #33231f;
       color: #e5b9ad; }
-  .button.yellow {
+  button.yellow, .button.yellow {
     background-color: #514d46;
     color: #e5d5ad;
     box-shadow: 0px 0px 32px 0px rgba(8, 7, 5, 0.472);
@@ -1848,14 +1944,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.yellow:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.yellow:hover, .button.yellow:hover {
       background-color: rgba(195, 173, 128, 0.5);
       box-shadow: 0px 0px 40px 0px #332d1f;
       color: #e5d5ad; }
-  .button.green {
+  button.green, .button.green {
     background-color: #415346;
     color: #b7e8ad;
     box-shadow: 0px 0px 32px 0px rgba(6, 8, 5, 0.472);
@@ -1866,14 +1963,15 @@ footer .horizontal-container {
     padding-right: 16px;
     margin: 8px;
     display: inline;
-    font-family: Montserrat;
-    font-weight: 600;
-    text-decoration: none; }
-    .button.green:hover {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer; }
+    button.green:hover, .button.green:hover {
       background-color: rgba(140, 196, 128, 0.5);
       box-shadow: 0px 0px 40px 0px #23331f;
       color: #b7e8ad; }
-  .button.center {
+  button.center, .button.center {
     margin-left: auto;
     margin-right: auto;
     display: block;

@@ -59,7 +59,7 @@ author:
       url: https://github.com/firedef
       icon: fab fa-github
 
-
+# exclude: ["Gemfile", "Gemfile.lock", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
 include:
   - _pages
   - scripts
