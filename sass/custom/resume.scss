@@ -9,7 +9,33 @@
 }
 
 .resume-panel {
-    @media all and (max-width: 800px) { visibility: hidden; display: none; }
+    //@media all and (max-width: 800px) { visibility: hidden; display: none; }
+    @media all and (max-width: 800px) { 
+        padding: 0;
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
+
+    @media all and (max-width: 500px) { 
+        .grid-container {
+            grid-template-areas: 'h h h h'
+                                 'p p p p'
+                                 'c c c c'
+                                 'c c c c'
+                                 'c c c c'
+                                 'l l l l'
+                                 'f f f f' !important;
+            .item2 {
+                margin: auto;
+            }
+            .item4 {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+    }
     margin: auto;
     background-color: white;
     color: $base00;
@@ -55,12 +81,12 @@
             content: "styled";
         }
     }
-    @media all and (max-width: 800px) {
-        pointer-events: none; opacity: 40%;
-        &:after {
-            content: "small" !important;
-        }
-    }
+    // @media all and (max-width: 800px) {
+    //     pointer-events: none; opacity: 40%;
+    //     &:after {
+    //         content: "small" !important;
+    //     }
+    // }
 }
 
 .resume-panel {

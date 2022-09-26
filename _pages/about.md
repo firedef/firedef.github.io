@@ -52,6 +52,7 @@ scripts-onload:
                     By commercial experience i mean our fintech startup. The project is far from complete, but we have a team of traders, mathematicians and programmers working on it. I'm a lead programmer here - my responsibility is to design app architecture, make code-related decisions, write core and control code quality. 
                 </div>
                 <div class="item4">
+                    <div>
                     <h3>Contacts:</h3>
                     <b>
                     <a href="https://github.com/firedef"><i class="fab fa-github noHover icon"></i>github.com/firedef<br/></a>
@@ -59,8 +60,10 @@ scripts-onload:
                     <a href="https://t.me/firedef"><i class="fab fa-telegram-plane noHover icon"></i>t.me/firedef<br/></a>
                     <a href="https://bit.ly/linked-firedef"><i class="fab fa-linkedin noHover icon"></i>bit.ly/linked-firedef<br/></a>
                     </b>
+                    </div>
                     <br/>
 
+                    <div>
                     <h3>My skills:</h3>
                     <b>
                     <i class="fa-regular fa-file-code icon"></i>C#, C, C++<br/>
@@ -72,13 +75,16 @@ scripts-onload:
                     <i class="fa-solid fa-bolt icon"></i>Optimizations<br/>
                     <i class="fa-solid fa-microchip icon"></i>Low-level code<br/>
                     </b>
+                    </div>
                     <br/>
 
+                    <div>
                     <h3>Languages:</h3>
                     <b>
                     <i class="fa-solid fa-earth-europe icon"></i>Russian<br/>
                     <i class="fa-solid fa-globe icon"></i>English<br/>
                     </b>
+                    </div>
                 </div>
                 <div class="item5"></div>
             </div>
@@ -86,7 +92,10 @@ scripts-onload:
 
 
 
-        <div class="resume-panel-small">
+        <!-- <div class="resume-panel-small">
+            <p class="notice--danger">
+                <i class="fa-regular fa-file-pdf notice-icon"></i>Your screen is too small to view original resume. Please, open page in desktop mode.
+            </p>
             <img class="ugly-photo" src="/images/Other/dude.jpg" />
             Hi! My name is Mitya, i'm a self-taught programmer with <b>4 years of non-commercial and 1.5 of commercial experience</b>. I love <b>low-level code, optimizations, science and graphics</b>.
             <br/>
@@ -108,7 +117,7 @@ scripts-onload:
             <br/>
             By commercial experience i mean our fintech startup. The project is far from complete, but we have a team of traders, mathematicians and programmers working on it. I'm a lead programmer here - my responsibility is to design app architecture, make code-related decisions, write core and control code quality. 
             
-        </div>
+        </div> -->
 
         <div class="entries-list">
             <div class="horizontal-container">
