@@ -22,7 +22,7 @@ scripts-onload:
 
         <div class="horizontal-container">
             <button class="resume-switch-style-button" onclick="toggleStyle('pdf-style', 'styled', 'normal');"><i class="fa-solid fa-brush icon"></i></button>
-            <button class="download-pdf-button tooltip"><i class="fa-solid fa-file-arrow-down icon"></i>download pdf<div class="tooltiptext">no pdf yet:(</div></button>
+            <a class="button download-pdf-button" href="https://drive.google.com/file/d/1wMIi2fuhzFdzpyVU7ivJ9nnC2Y0IavSz/view?usp=sharing" download="Dmitrii_Nosov_CV"><i class="fa-solid fa-file-arrow-down icon"></i>download pdf</a>
         </div>
 
 
@@ -34,22 +34,22 @@ scripts-onload:
                     Hi! My name is Mitya, i'm a self-taught programmer with <b>4 years of non-commercial and 1.5 of commercial experience</b>. I love <b>low-level code, optimizations, science and graphics</b>.
                     <br/>
                     <br/>
-                    I`m very curious - always open to learning something new and not afraid of challenging tasks. I can write compact and performant code in different languages, design architecture of complex applications.
+                    I`m very curious - always open to learning something new and not afraid of challenging tasks. I can write compact and performant code in different languages, and design architecture of complex applications.
                     <br/>
                     <br/>
-                    While i prefer to use <b>C#</b> In my projects, I also know <b>C</b> and modern <b>C++</b>. Sometimes I'm using Python for simple tasks.
+                    While i prefer to use <b>C#</b> In my projects, I also know <b>C</b> and modern <b>C++</b>. Sometimes I use Python for simple tasks.
                     <br/>
-                    I find low level programming very interesting. I know C, C++, <b>IL code</b> (C# bytecode), familar with different <b>assemblies (NASM, MASM)</b> and <b>Spir-V</b> (Vulkan bytecode). Lot's of <b>unmanaged code</b> in critical paths makes my C# code fast.
+                    I find low level programming very interesting. I know C, C++, <b>IL code</b> (C# bytecode), familiar with <b> x86 assembly</b> and <b>Spir-V</b> (Vulkan bytecode). Lot's of <b>unmanaged code</b> in critical paths makes my C# code fast.
                     <br/>
-                    I love to work with graphics. Almost all design of this site was made by me using html, sass and js. Sometimes i experiment with shaders in <b>GLSL</b>, HLSL (Unity) and blender shader nodes. I worked a lot with <b>OpenGl</b> and familar with <b>Vulkan</b>.
+                    I love to work with graphics. I’ve made my personal site by using html, sass and js. Sometimes i experiment with shaders in <b>GLSL</b>, HLSL (Unity) and blender shader nodes. I worked a lot with <b>OpenGl</b> and familiar with <b>Vulkan</b>.
                     <br/>
-                    I'm not a sciencist, i study it with passion from childhood. Theoretical physics, chemistry and astronomy are my main interest but i like any popular science. In simple terms, i like everything mindblowing or something that tries to explain how this world works.
-                    <br/>
-                    <br/>
-                    I'm using Arch btw. Jokes aside, this give me deep understanding on how computer works. After many years of Windows, i realized how important cross-platform code. Now i care about compatibility and i'm trying make user experience great on different platforms.
+                    I'm not a sciencist, but I have studied it with passion since childhood. Theoretical physics, chemistry and astronomy are my main interest but i like any popular science. In simple terms, i like everything mindblowing or something that tries to explain how this world works.
                     <br/>
                     <br/>
-                    By commercial experience i mean our fintech startup. The project is far from complete, but we have a team of traders, mathematicians and programmers working on it. I'm a lead programmer here - my responsibility is to design app architecture, make code-related decisions, write core and control code quality. 
+                    I'm using Linux. This give me deep understanding on how computer works. After many years of Windows, i realized how important cross-platform code. Now i care about compatibility and i'm trying make user experience great on different platforms.
+                    <br/>
+                    <br/>
+                    I’m involved in the development of our <b>FinTech</b> startup. The project is far from complete, but we have a team of traders, mathematicians and programmers working on it. I'm a lead programmer here - my responsibility is to design app architecture, make code-related decisions, write core and control code quality.
                 </div>
                 <div class="item4">
                     <div>
