@@ -31,25 +31,9 @@ scripts-onload:
                 <div class="item1">Dmitrii Nosov</div>
                 <div class="item2"><img class="ugly-photo" src="/images/Other/dude.jpg" /></div>
                 <div class="item3">
-                    Hi! My name is Mitya, i'm a self-taught programmer with <b>4 years of non-commercial and 1.5 of commercial experience</b>. I love <b>low-level code, optimizations, science and graphics</b>.
-                    <br/>
-                    <br/>
-                    I`m very curious - always open to learning something new and not afraid of challenging tasks. I can write compact and performant code in different languages, and design architecture of complex applications.
-                    <br/>
-                    <br/>
-                    While i prefer to use <b>C#</b> In my projects, I also know <b>C</b> and modern <b>C++</b>. Sometimes I use Python for simple tasks.
-                    <br/>
-                    I find low level programming very interesting. I know C, C++, <b>IL code</b> (C# bytecode), familiar with <b> x86 assembly</b> and <b>Spir-V</b> (Vulkan bytecode). Lot's of <b>unmanaged code</b> in critical paths makes my C# code fast.
-                    <br/>
-                    I love to work with graphics. I’ve made my personal site by using html, sass and js. Sometimes i experiment with shaders in <b>GLSL</b>, HLSL (Unity) and blender shader nodes. I worked a lot with <b>OpenGl</b> and familiar with <b>Vulkan</b>.
-                    <br/>
-                    I'm not a sciencist, but I have studied it with passion since childhood. Theoretical physics, chemistry and astronomy are my main interest but i like any popular science. In simple terms, i like everything mindblowing or something that tries to explain how this world works.
-                    <br/>
-                    <br/>
-                    I'm using Linux. This give me deep understanding on how computer works. After many years of Windows, i realized how important cross-platform code. Now i care about compatibility and i'm trying make user experience great on different platforms.
-                    <br/>
-                    <br/>
-                    I’m involved in the development of our <b>FinTech</b> startup. The project is far from complete, but we have a team of traders, mathematicians and programmers working on it. I'm a lead programmer here - my responsibility is to design app architecture, make code-related decisions, write core and control code quality.
+                    Hello, I'm Mitya - self-taught programmer. I have 4.5 years of experience, with 2 of them in a team. I love low-level code, optimizations, science and graphics.
+
+Always open to learning something new and like to solve challenging tasks! I program in C# and Rust, know C and modern C++. Also have experience with Linux, graphics (OpenGl, Vulkan, shaders), low-level languages (Assembly, MSIL, Spir-V), fintech and web (Html, Css, protocols). My computer running Linux and few years ago i used windows. So i prefer to write cross-platform code.
                 </div>
                 <div class="item4">
                     <div>
